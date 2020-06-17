@@ -1,0 +1,507 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>028 Nethalyn</title>
+	<meta name='Generator' content='Zim 0.72.0'>
+	<style type='text/css'>
+		a          { text-decoration: none      }
+		a:hover    { text-decoration: underline }
+		a:active   { text-decoration: underline }
+		strike     { color: grey                }
+		u          { text-decoration: none;
+					 background-color: yellow   }
+		tt         { color: #2e3436;            }
+		pre        { color: #2e3436;
+					 margin-left: 20px          }
+		h1         { text-decoration: underline;
+					 color: #4e9a06; margin-bottom: 0 }
+		h2         { color: #4e9a06; margin-bottom: 0 }
+		h3         { color: #4e9a06; margin-bottom: 0 }
+		h4         { color: #4e9a06; margin-bottom: 0 }
+		h5         { color: #4e9a06; margin-bottom: 0 }
+		p          { margin-top: 0              }
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		.migrated-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB+AKHREFA8vJSnkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAC1klEQVRIx+2VT0hUURTGf/e958w4Tc3TYowMw1GyEgwr1MqsFmbZIrIWQZsWJUjbdoHQpl3Qps0swnCRECQFYkR/TC1iKkqmfzAKTo2Vf8hoRsfR995tkRMT87RRWkUHHhy495zvnvvu933wP/75EKkkEAjIYDCIaZpIKRFCZN0kfX9xcTGtra2/irVUEolECIfDlJeXo+s6hmFkDaCqKoZhEAqFSCaTv60pqcSyLAoLC/F4PEtqDmCaJkIIKisrMybX0sdUVRWA5ubmPzdNjjI1cpXkZC/O1fV03PXgdDqRUtpPIITAsqxsDz0Z/3CZQv8uqo4N4C8/Tp2/DdM0MiZQlvk41OTkI/LW1SGtCVb5drD3eCc71wcA+VcAHA5vDd8+3UGakxiJV7i9pdQevU5T1R35pJ3MV5QW1pf+0kWBheJ2SWua8EQXZXsu4fVVYEz1sEKvof5EuxjoPvzpcRvrdp9C2gGMx6cpOHBmbImMesds7BZubwMVDTfXDnQ3vQfK7AC8wLfExMX5whyQc3q2OEnjGm5vE76SQxsfBLr77a7CNf+n0r/l6sSMtsBSnurckiIILCobAtVZhpF4gZF4jubaymj4Ch/fd380LE7bAnjc0NPxk2yqpmEuwGxF0ag+0k5uTpzZeBeaazvj0We8fXojainsb2xh2BZgbe0gSIllzSIUh63wfQ6dZ/O2fbjcKlOj58jJ3cVENESw5yErc9nf2MLQ4jwQAkV1Lqiq37/cZ9WaahJjF9AcmxiPDhLs7ePe23oOnmUwg2hSShQle96tKDjA2HAniusgo9FxnvY9Jxw7RWzGYy92QghM00x5g53qp9sHmtB58/o2umOI2NwGolMnMYUHIb7aAyiKwsjICLqu2/qBEIKUUAohMaSHSLyBSMoPTINQ6CX5+fn2AEVFRZSUlBCPx4nFYhl3L4RESjF/GEgX3pSj+Xw+/H7/b3U/AEOZFnp7O5+5AAAAAElFTkSuQmCC)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+
+		span.insen { color: grey                }
+
+		.pages {
+			max-width: 1000px;
+			 padding-left: 320px;
+		}
+		.menu{
+			float:left; width: 300px;
+		}
+		hr{clear:both;}
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class='header'>
+	[ <a href='./027_Miriam_Buchsbaum_und_das_Rift_der_Schatten.html'>Prev</a> ]
+
+	[ <a href='../../exordia.html'>Index</a> ]
+
+	[ <a href='../../timeline.html'>Next</a> ]
+</div>
+
+<hr />
+
+<div class="menu">
+<ul>
+<li><a href="../../lore.html" title="lore" class="page">lore</a></li>
+<li><a href="../../people.html" title="people" class="page">people</a></li>
+<li><a href="../../places.html" title="places" class="page">places</a></li>
+<li><a href="../../quests.html" title="quests" class="page">quests</a></li>
+<li><a href="../../sessions.html" title="sessions" class="page">sessions</a>
+<ul>
+<li><a href="../Arc_01_Fort_Dalos.html" title="Arc 01 Fort Dalos" class="page">Arc 01 Fort Dalos</a></li>
+<li><a href="../Arc_02_Drunai.html" title="Arc 02 Drunai" class="page">Arc 02 Drunai</a>
+<ul>
+<li><a href="./019_Der_Weg_nach_Valun.html" title="019 Der Weg nach Valun" class="page">019 Der Weg nach Valun</a></li>
+<li><a href="./020_Angriff_der_Monkkrieger.html" title="020 Angriff der Monkkrieger" class="page">020 Angriff der Monkkrieger</a></li>
+<li><a href="./021_GashWe.html" title="021 GashWe" class="page">021 GashWe</a></li>
+<li><a href="./022_Ueberfall_der_Schattenwoelfe.html" title="022 Ueberfall der Schattenwoelfe" class="page">022 Ueberfall der Schattenwoelfe</a></li>
+<li><a href="./023_Sabotage_der_Saboteure.html" title="023 Sabotage der Saboteure" class="page">023 Sabotage der Saboteure</a></li>
+<li><a href="./024_Das_Kaufen,_Leihen_und_Paktieren_von_und_um_Macht.html" title="024 Das Kaufen, Leihen und Paktieren von und um Macht" class="page">024 Das Kaufen, Leihen und Paktieren von und um Macht</a></li>
+<li><a href="./025_Von_Blutbaeumen_und_Baumstadt.html" title="025 Von Blutbaeumen und Baumstadt" class="page">025 Von Blutbaeumen und Baumstadt</a></li>
+<li><a href="./026_Gwydrasil_und_Bluttreant.html" title="026 Gwydrasil und Bluttreant" class="page">026 Gwydrasil und Bluttreant</a></li>
+<li><a href="./027_Miriam_Buchsbaum_und_das_Rift_der_Schatten.html" title="027 Miriam Buchsbaum und das Rift der Schatten" class="page">027 Miriam Buchsbaum und das Rift der Schatten</a></li>
+<li><b>028 Nethalyn</b></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="../../timeline.html" title="timeline" class="page">timeline</a></li>
+</ul>
+
+</div>
+
+<!-- Wiki content -->
+
+<div class='pages'>
+	<div class='heading'>
+	<h1>028 Nethalyn <a name='sessions:Arc 02 Drunai:028 Nethalyn'></a></h1>
+	</div>
+
+	<div class='content'>
+	<p>
+Created Mittwoch 10 Juni 2020
+</p>
+
+<p>
+ingame: 20. Mai 1100
+</p>
+
+<p>
+<ul>
+<li>es ist Morgen geworden, immer noch am Weiher</li>
+<li>Ixbo ist zurück!</li>
+<li>Ryana betet im Wald, Art Naturmedidation</li>
+<li>Grim verabschiedet sich am leeren See leise von Miri "Wir werden uns in den Schatten wiedersehen"</li>
+<li>Roldar bittet am See Nolzor auf Miri aufzupassen, falls er auf die Schatten Zugriff hat</li>
+<li>Grim probiert Boots of Levitation aus</li>
+<li>Ryana führt uns sehr schnell und lautlos zurück nach Gwydrasil</li>
+<li>Roldar fragt Ryana ob es in Gwydrasil Handel mit Gold gibt - ja, aber viele mögen den Menschen-Brauch nicht</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>wir kommen um 10 an</li>
+<li>Stimmung fröhlicher, Licht irgendwie freundlicher</li>
+<li>Elfen schauen uns immer noch komisch an</li>
+<li>wir gehen zum Großen Baum, werden von Wachen empfangen</li>
+<li>kommen zu großer Halle, sehen wieder den kleinen Drachen</li>
+<li>Seherin steht vom Thron auf, scheint viel stärker zu sein, Farbe besser</li>
+<li>die Seherin spricht jetzt selber</li>
+<li>"Ihr 3 und Ryana, ihr seit zurück. Wie mir scheint konntet ihr die Krankheit vertreiben. Wie war es euch möglich?"</li>
+<li>Grim meint wir hätten schon gesagt dass die Schatten nützlich sein können und das waren sie</li>
+<li>Roldar erzählt von den fleischlichen Hüllen, von den Geistern, dass er nicht weiß was passiert ist</li>
+<li>Grim meint Miri's dunkle Macht hat es geschafft</li>
+<li>Roldar meint er weiß nicht ob die Macht wirklich <b>dunkel </b>war, weil sie gegen die ziemlich offensichtlich bösen Hexen gekämpft hat</li>
+<li>die Seherin möchte uns ein Geschenk überreichen, sie klatscht</li>
+<li>Wachen bringen einen Metallstab mit gold/silber Verzierungen (umschwingt von Ästen), am Ende ein weiß leuchtender Stein gefasst</li>
+<li>ein Soldat streckt uns den Stab hin</li>
+<li>"Bitte nehmt es als Zeichen unseres Dankes - das Szepter von Gwydrasil. Es wird euch den "plant-transport" in Exordia ermöglichen. Außerdem werden alle Mitglieder unseres Volkes euch ehren, solange ihr den Stab tragt."</li>
+<li>sie bittet uns Gastfreundschaft an</li>
+<li>Grim stellt sich an Archäologe vor und fragt wegen Relikten der Adalanten - dreieckiges Symbol</li>
+<li>Grim zeigt ihr den Ring mit dem Dreieck, ob sie das schonmal gesehen hat</li>
+<li>"Das Zeichen schon lange nicht gesehen, Symbol des Urvolkes von Adalantis, bzw. wurde es zu dem Symbol, als sie vertrieben wurden."</li>
+<li>Grim: wohin</li>
+<li>"schlimmer als ihr euch vorstellen könnt. die Bestrafung des unendlichen Lebens durch unendliches Leid"</li>
+<li>"woher hat ihr den Ring"</li>
+<li>Grim meint lange Geschichte, aber wir haben auch Stab gefunden, Mönche scheinen den Ring sehr zu wollen</li>
+<li>"Ihr habt eine Gruppe von angehörigen dieser Urrasse getroffen. gibt es noch vereinzelt, halten sich versteckt. Stab mächtige Waffe, aber nur wenn man weiß wie - wir und sie wissen das nicht"</li>
+<li>Grim bedankt sich, sie meint nix zu danken</li>
+<li>"Ihr seit in meinem Reich immer willkommen. Wenn die Tage düsterer werden werden</li>
+<li>Roldar meint es wäre nett, wenn sie Attica nicht verraten würden</li>
+<li>Seherin meint sie würden uns nie an unsere Feinde verraten</li>
+<li>Grim fragt wie sie zum Empire stehen</li>
+<li>Seherin meint nur Ansammlung von Menschen, wird Probleme geben wenn sie zu viel Macht anhäufen. Schon lange nicht mehr in Menschenbelange eingemischt, haben das damals teuer bezahlt</li>
+<li>Roldar fragt wie Szepter funktioniert - vom Portalmeister erklären lassen</li>
+<li>Roldar fragt ob es ein Limit der Benutzung gibt - sie meint ihre Macht macht das möglich und die ist nicht ewig, besonders jetzt</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>ein Elf führt unsere Pferde vor, meint sie hätten sich erlaubt alles etwas schöner zu machen; Pferde sind sauber, gekämmt; Sättel sind jetzt Elfen-Leder, ganz schön, stabil, leicht; Pferde sind jetzt viel sportlicher - Warhorse</li>
+<li>wir gehen einkaufen - Spellkomponents, Roldar lässt sich noch ein Holy Symbol auf die Rückseite seines Schildes malen</li>
+<li>wir bedanken und verabschieden uns von Ryana</li>
+<li>Grim empfiehlt ihr in eine Menschenstadt zu gehen, falls sie wieder mal in Ungnade fallen sollte</li>
+<li>sei meint im Moment nicht so das Problem, aber wer weiß was die Zukunft bringen sollte</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>wir sind am Teleportbaum, sehen einen in helle Roben gekleideten Halbelfen, der verneigt sich</li>
+<li>Durbul zieht den Stab und fragt nach Einweisung</li>
+<li>kotzen normal, Waldelfen lernen schon als Kinder, aber nur privilegierte</li>
+<li>wir sollten das aber schon schaffen</li>
+<li>"Wichtig ist: das Szepter, weil normalerweise Außenstehende nicht erlaubt; Szepterträger berühren, sonst wird alles zurückgelassen"</li>
+<li>"Alle größeren Wälder haben einen dieser Bäume; Aber nicht zwangsläufig unter Kontrolle, Vorsicht, weil niemand den Ausgang bewacht"</li>
+<li>Grim fragt ob einer gefällt werden könnte</li>
+<li>er meint das wisse die Herrin, die Portalbäume werden alle paar hundert Jahre oder bei Problemen ausgetauscht</li>
+<li>wichtig: Träger des Szepters muss an den Wald denken, an den er teleportiert werden will</li>
+<li>Roldar fragt ob es ein Protokoll gibt zum ankommen in Gwydrasil - nicht wirklich, nur befugte kommen an, außerdem schwer bewacht</li>
+<li>wenn Szepter verloren oder zerstört - nützt sonst niemandem was, weil an uns gebunden</li>
+<li>wir verabschieden uns und porten zum Rothwald</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>es zieht uns in den Strudel der Energien, durch die Wurzeln der Welt</li>
+<li>auf einmal landen wir wieder auf Waldboden</li>
+<li>Heinrich schafft es, Rest ist komplett im Arsch: schwindlig, schlecht, verwirrt, halb-blind; Roldar kotzt</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Durbul und Grim werden langsam wieder, sehen eine gleißend weiß strahlende Robe</li>
+<li>kommt langsam näher: Tuch vor Gesicht, hält sich Nase zu, Augen strahlend golden, silber-blonde lange Haare, weiblich mit weißem Pferd</li>
+<li>Durbul merkt dass es sicher kein Geist ist, aber die Geister sind stärker um sie herum</li>
+<li>Roldar kotzt immer noch</li>
+<li>die Gestalt fragt: "Ist das dein Baum?"</li>
+<li>Durbul: "Der Wald ist für alle. Niemand kann den Wald besitzen. Wer seit ihr? Eure Präsenz ist so vollkommen."</li>
+<li>Roldar erkennt die Person inzwischen auch</li>
+<li>Durbul meint wir sind aus dem Baum gekommen</li>
+<li>die Frau dreht sich zu Grim und meint man muss mit den Pilzen im Rothwald etwas aufpassen</li>
+<li>Durbul mein keine Pilze, wir reisten durch den Baum</li>
+<li>Roldar fragt wer sie sei: Nethalyn, sei durch Wald spazieren gegangen</li>
+<li>sie fragt wie wir hergekommen sind</li>
+<li>Roldar meint lange Geschichte, wo wir sind - im Rothwald, halben Tagesmarsch von Lauris entfernt</li>
+<li>sie komme aus Norden, auf Durchreise</li>
+<li>kommt aus Port Skye</li>
+<li>Roldar erkennt an den Knöpfen der Robe eine weiblichen Löwen mit goldener Krone - Zeichen der Gaphne</li>
+<li>sie fragt wo wir hingehen, sie ginge nach Süden</li>
+<li>Durbul meint Lauris sei gut, Lauris - mit so Seitenblicken zu uns</li>
+<li>sie fragt ob wir die Ruinen von Drusk kennen, interessant aus wissenschaftlicher Sicht</li>
+<li>Roldar meint gehört</li>
+<li>sie meint sie wissen ein paar Sachen, wenn sie eh schon da ist, vielleicht ansehen</li>
+<li>Durbul meint Port Skye wäre weit, sie meint über Amberville hergekommen (cool, aber furchteinflößend)</li>
+<li>Grim hat schon ganz selten Leute mit den goldenen Augen gesehen - menschlich, aber leicht anderer Ursprung: Aasimar</li>
+<li>Durbul kennt Aasimar aus Khorax</li>
+<li>wir sind an einem Weg in einem Wald, recht normal aussehender Nadelwald</li>
+<li>Roldar versucht sich zu merken wo der Teleportbaum ist, unweit einer Biegung im Weg</li>
+<li>Nethalyn fragt ob wir mitkommen, sie schon lange nicht mehr mit Begleitung unterwegs</li>
+<li>(Nethalyn hat Wildemar-Heere mobilisieren gesehen)</li>
+<li>Nethalyn fragt nach Namen: Konrad, Perri, Hans (Roldar, Grim, Durbul)</li>
+<li>wir gehen kurz weg und beraten uns, Grim messaged Roldar: "Mir ist das ganze sehr suspekt, kann kein Zufall sein, dass wir sofort jemanden finden, der auch nach Ruinen sucht"</li>
+<li>Roldar gibt ihm recht, aber Ausstrahlung gut, kann uns vielleicht Weg zeigen</li>
+<li>Nethalyn spielt inzwischen wunderschön Harfe, friedlich </li>
+<li>Roldar weißt auf Gaphne-Knöpfe hin</li>
+<li>Nethalyn fragt Durbul ob er ihren Rucksack an der Satteltasche befestigen kann</li>
+<li>wir reiten los, dem Weg nach</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>so nach 4 Stunden sehen wir den Fluß Siryus</li>
+<li>Durbul reden mit Nethalyn über ihr Interesse an den Ruinen</li>
+<li>in Amberville in die Bilbiothek eingedrungen = Historikerin</li>
+<li>ist auf Hauptstadt von Drunai gestoßen, hofft in Ruinen was zu finden</li>
+<li>glaubt wir sind Junkies, ob wir öfter in den Wald gehen</li>
+<li>Durbul meint sie habe die Pfeife gesehen</li>
+<li>Nethalyn meint "Was immer die untere Klasse will"</li>
+<li>Roldar meint es gäbe Legende von Geistern in den Ruinen</li>
+<li>Nethalyn meint war noch nie dort, hat das aber auch gehört</li>
+<li>sie habe viel über die Ruinen gelesen, wird nicht ungefährlich sein - aber hat die gute Harfe mit</li>
+<li>Nethalyn fragt was wir als Beruf machen, Grim meint "Auftragsmörder", aber Durbul meint das wäre nur Witz</li>
+<li>Roldar meint wir ziehen herum und machen was anfällt</li>
+<li>Durbul meint spiritueller Begleiter - Nethalyn sofort dabei, nimmt jeden Tag Aurenbad</li>
+<li>sie bietet Durbul Parfüm an, der sucht das in ihrem Rucksack und schaut auch gleich nach was sonst so drin ist - random Beautystuff, 2 Bücher</li>
+<li>Nethalyn meint die Bücher aus Amberville </li>
+<li>Durbul meint er sei sogar Autor</li>
+<li>Nethalyn fragt nach, hat es vielleicht schon in Port Skye gelesen</li>
+<li>sie fragt wegen Roldar und Grim, scheinen etwas komisch, vor allem der letztere, aber halt Gnome</li>
+<li>Nethalyn meint unsere Rüstungen sind viel zu schön für uns</li>
+<li>Durbul meint es war ein Geschenk, zeigt seine Bracers her</li>
+<li>Nethalyn fragt Grim warum so leise, ob die Pilze schlecht waren</li>
+<li>Grim meint welche Pilze - sie meint sie würde uns nicht an Stadtwache verpfeifen</li>
+<li>Nethalyn fragt Roldar woher "solche wie ihr" diese Rüstungen her haben - Roldar meint woher sie wissen will dass wir Commoner sind</li>
+<li>sie meint aus Benehmen: Rauchen, Kotzen, glaubt wie hätten Pilze gegessen</li>
+<li>freut sich auf Ruinen, was sie da finden wird - Grim meint "den Tod" - sie weißt das überheblich ab</li>
+<li>sie erzählt uns alles was sie weiß über Ruinen
+<ul>
+<li>soll man nicht betreten - aber sie hat curiosity</li>
+<li>Geister</li>
+<li>gibt dort vielleicht altes, verloren gegangenes Wissen über Pantheon, Götterkriege</li>
+</ul>
+</li>
+<li>Grim fragt sie ob sie als Kind des Empires Recht auf dieses Drunaische Wissen habe - hat ihre Gründe, würde nicht die Ruhe stören, wenn es keine Grund gäbe - hat persönlichen Anliegen... schweigt dann aber</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>wir kommen zu einer Brücke, vorher steht eine Art Rikscha (Anm. eigentlich Handkarren) mit Güter am Wegesrand, davor steht eine Gruppe von dunkel bekleideten Humanoiden und eher ärmlicher aussehender Bauer</li>
+<li>wir sehen Lederrüstungen, Waffen, verhüllte Gesichter, einer hält dem Bauern einen Dolch an die Kehle</li>
+<li>Roldar fragt ob wie uns einmischen sollen</li>
+<li>Nethalyn ist schon vorgeritten</li>
+<li>der erste von "Was wollt ihr! Hier gibt's nichts zu sehen"</li>
+<li>Nethalyn sieht Rüstung sehr verschlissen, Gewand zerrissen, ungepflegt; keine Abzeichen</li>
+<li>sie fragt nach Anführer - der mit Dolch meint "Wer will das wissen" </li>
+<li>Durbul reitet auch hin, Roldar steigt ab und geht hin</li>
+<li>4 am Weg, gegenüber im Wald sind 2-3 Armbrustschützen</li>
+<li>Nethalyn fragt was vier bewaffnete gegen einen alten Mann machen</li>
+<li>der meint geht uns nichts an</li>
+<li>Nethalyn castet Charm Person auf ihn: "Bitte, wir wollen keine Stress, sagen sie mir doch einfach was sie machen"</li>
+<li>die anderen sind etwas angespannt wegen casten</li>
+<li>Anführer "Klingt einleuchtend. Dieser Alte hier, seine Familien schuldet uns Geld. Wir sind hier um das einzutreiben."</li>
+<li>einer von den hinteren meint "Chef, wieso erzählst du das alles?"</li>
+<li>Grim reitet langsam heran</li>
+<li>der Bauer meint er würde zahlen wenn er es hätte</li>
+<li>Nethalyn meint der Anführer solle ihn doch in Ruhe lassen und in ein paar Wochen wieder kommen</li>
+<li>der Anführer gibt ihr Recht</li>
+<li>die anderen sind etwas verwirrt, sagen aber nichts</li>
+<li>Anführer schickt seine Männer weg, </li>
+<li>Nethalyn gibt ihm 5g - er meint das wäre schon genug gewesen</li>
+<li>Lauris wäre direkt nach der Brücke</li>
+<li>Nethalyn fragt nach Gasthaus - "Prancing Gryphon" - zu teuer für ihn, teilweise auch zwielichtige Leute</li>
+<li>Grim's Mage Hand klaut die Bücher von Nethalyn: History of Drunai, Buch mit Blutlinien von Drunai</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>inzwischen so 15:00</li>
+<li>Nethalyn spielt wieder mit der Harfe, Grim Mage Handed die Harfe verstimmt, aber Nethalyn merkt was - erkennt dass es wohl eine Mage Hand ist, weiß aber nicht woher</li>
+<li>wir gehen nach Lauris</li>
+<li>Siryus hier so Inn-Größe</li>
+<li>Laurin hier nicht wirklich befestigt, kaum militärisch</li>
+<li>ca. so wie Fort Dalos</li>
+<li>lebt vom Handel mit Baraxia</li>
+<li>ähnliches Bild wie sonst in Drunai - Revolte nicht ganz kampflos, haben aber schon aufgeräumt</li>
+<li>Leute recht euphorisch am Dorfplatz, hört einem Towncryer zu; junger Mensch, hat Posteulen neben sich - 
+<ul>
+<li>Drunaische Armee einige Siege</li>
+<li>imperiale Marine geschwächt</li>
+<li>Armee der Blauen Feder auf Weg nach Fort Dalos, knapp Attentat entgangen</li>
+<li>die alte Allianz zerfällt</li>
+<li>Lefleur nimmt Kenntnis von Wildemar Hilfe</li>
+<li>Wildemar erklärt Empire den Krieg</li>
+</ul>
+</li>
+<li>Nethalyn sagt zu Durbul "Wenn sie die geistigen Errungenschaften des Empires nicht wollen..."
+<ul>
+<li>verirrter Wanderzoobetreiber wurde von eigenem Roc gefressen - der weiterhin frei</li>
+<li>totgeglaubte Waisenkinder aus Sumpf herausgekommen</li>
+<li>Fest der Sterne beginnt bald mit Parade in Sagash</li>
+<li>Guerillagruppen machen Gebiet um Sagash unsicher</li>
+</ul></li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>prunkvolles, rotes Haus, schöne Fenster - "Prancing Gryphon", Schild mit aufgemaltem Gryphon mit Monokel</li>
+<li>Durbul redet mit dem Towncryer, ob er interessiert an Neuigkeiten sei</li>
+<li>er sei froh um Nachrichten, müsste aber Richtigkeit überprüfen</li>
+<li>Durbul meint er hätte gute Quellen - zeigt auf 5 Gold</li>
+<li>Towncryer meint "Ok"</li>
+<li>Durbul: 
+<ul>
+<li>"wegen Helden der Drunaischen Revolution: traurige Neuigkeiten - in der großen Explosion gestorben um die Armee zu schützen"</li>
+<li>"Gerüchte über Korruption in der Scarlet League - Inquisitorin Attica Thorn soll Informationen über Empirepositionen der Revolution mitgeteilt haben, ist Heldin der Revolution"</li>
+</ul>
+</li>
+<li>er fragt wegen Echtheit, Durbul gibt ihm die 5g - er geht langsam weg</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Nethalyn meint zu Hans sie würde gut für Bodyguard zahlen - 50g für Roldar/Grim, 75g für ihn (aber er soll nix sagen dass er mehr bekommt)</li>
+<li>Durbul schlägt uns das vor, Grim will sie irgendwann loswerden, weil sie dem Empire zu nahe steht, er eigene Mission hat</li>
+<li>Roldar meint Hilfe könnte nicht schaden, Ruinen sind groß</li>
+<li>Grim nicht sicher was es heißt wenn sie den Glanz der Ruinen wieder herstellen will</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Flyer am Prancing Gryphon: "Heute, der Atemberaubende Augustinus" - Nethalyn weiß: eher ein Möchtegern-Entertainer</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Grim meint zu Durbul, weniger ist oft mehr bzgl. der Rumors, Attica = Heldin der Revolution ist vielleicht nicht so hilfreich</li>
+<li>Durbul geht zum Cryer zurück: er habe sich mit uns beraten, es gäbe Korrektur </li>
+<li>er meint Eulen schon weg, Korrektur könnte ihm seinen Job kosten; sie nehmen normalerweise keine Infos von Außenstehenden</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Nethalyn geht zum Stallmeister vom Prancing Gryphon: ihr Pferd trinkt gerne parfümiertes Wasser, gibt ihm Zügel und ein paar Gold - geht wieder</li>
+<li>wir gehen auch zum Stallmeister, Durbul meint unsere Freundin hat schon bezahlt</li>
+<li>Stallmeister meint unsere Pferde hätten schönes Sattelzeug</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>wir gehen mal Essen, Grim nimmt sich Zimmer (5 sp) und geht "schlafen" (Bücher lesen)</li>
+<li>gefüllte Taverne</li>
+<li>interessant Gestalten: normale Stadtbürger, ähnliche Gestalten wie wir (Adventurer)</li>
+<li>Nethalyn fragt nach besten Plätzen, gibt aber keine Einteilung</li>
+<li>wir setzen uns an ein Fenster, Nethalyn putzt ihren Sitz ab</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Grim findet schönes Zimmer mit Steinboden (unter Bärenfell)</li>
+<li>schließt sich ein und liest
+<ul>
+<li>Blutlinie, einige Seiten markiert und bekritzelt, immer wieder Lücken:	
+<ul>
+<li>Turbail, vorher schwierig, weil ziemlich wilde Zeit</li>
+<li>hinter Turbail ziemlich klar: Kuranesh einziger Sohn</li>
+<li>ein Name, ganz am Ende, fett markiert: Valea (Notiz: "Mutter")</li>
+<li>von da hinauf Zurückverfolgung angestrichen, lässt sich auf Kuranesh zurückführen</li>
+<li>Passagen über Syvilla, Schwester von Kuranesh, aber Lücken, weil ausgestoßen</li>
+<li>Kuranesh mehrere Kinder (neben Apokai): Owyn, Azelia, aber originale Anmerkung: uneheliche Kinder </li>
+<li>nächste Generation unter Owyn führt zu Valea (geboren 1059)</li>
+<li>Frauen-bäume werden nicht weiter aufgezeichnet</li>
+</ul>
+</li>
+<li>Geschichte von Drunai:
+<ul>
+<li>nicht wirklich was neues, teilweise vielleicht genauer</li>
+<li>Schlachten der Sieben Drachen (haben Drunai vorher beherrscht), bis Apokai alle 7 ermordet hat</li>
+<li>Verbannung von Apokai durch 4 Gründer der Scarlet League</li>
+</ul></li>
+</ul></li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Rest isst</li>
+<li>Nethalyn verlangt nach dem besten Wein</li>
+<li>schon langsam etwas mehr los</li>
+<li>einer sticht heraus: links und rechts bewachend stehen 2 Goliath, in der Mitte sitzt ein prunkvoll in Sagash-Wohlstandsmode mit Turban gekleideter Mann; überall Klunker, Ringe</li>
+<li>Durbul sitzt mit dem Rücken zu ihm</li>
+<li>Nethalyn schlägt wieder vor: zusammen zu Ruine, 200 gp für uns
+<ul>
+<li>Bücherei</li>
+<li>Ursprung des Fluches herausfinden, vielleicht bannen</li>
+<li>Spaß und Freude</li>
+</ul>
+</li>
+<li>Gruppe erscheint ihr kampferfahren und neugierig</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Grim holt Dolch heraus und meditiert, überlegt wie es weitergehen soll
+<ul>
+<li>ähnliche Energie wie früher, weniger stark</li>
+<li>vielleicht gibt es Weg mit der Energie umzugehen um Eingang in Arbitrarium zu machen</li>
+<li>allerdings weiß er noch nicht ganz wie - ersten Male war es unbewusst</li>
+<li>aber hat Gefühl dass er lernen kann diese Reise zu machen, wenn er will</li>
+</ul></li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Roldar meint schon etwas spät, vielleicht keine gute Idee in der Nacht bei den Ruinen anzukommen</li>
+<li>Nethalyn schnippt die Kellnerin heran, verlangt Suite und 3 Zimmer für Kumpanen, die meint Buchung über ihren Mann (dwarf), Suite schon weg - vom Klunkertypen</li>
+<li>Nethalyn geht zum Dwarf und meint sie habe lange Reise hinter sich, braucht ein Bad für ihre Füße - hätte gerne Suite und schaut ganz arm</li>
+<li>der Dwarf meint nicht so leicht, da ist schon einer drin, schon seit Woche; er will mit dem Gast reden, oder vielleicht sie?</li>
+<li>er führt sie hin zu dem Klunkertypen: "Razif, es tut mir Leid, aber diese Dame hat gute Argumente in ihrer Suite zu schlafen"</li>
+<li>Razif hält ihr seine Hand hin, sie küsst seinen Ring - er küsst ihre Hand </li>
+<li>"Ihr wollt in meiner Suite schlafen?"</li>
+<li>sie meint sie wäre lange gereist</li>
+<li>er meint Suite sei super, schon eine Woche da, sei Händler, interessiert sich sehr für Archäologie, Händler für wertvolle Antiquitäten</li>
+<li>Nethalyn schleimmt sich ein</li>
+<li>Razif spricht sie auf uns an, sie sagt wir wären ihre Bodyguards</li>
+<li>er hätte ein Problem: er wartet auf ein paar seiner Männer, in der Ruine, auf Suche nach wissenschaftlichen Antworten</li>
+<li>schwer gutes Personal zu finden, er macht sich Sorgen um seine Männer</li>
+<li>Nethalyn sagt sie wolle auch in die Ruinen, sei auf Suche nach Buch</li>
+<li>er lehnt sich zu ihr: seine Männer suchen die Schwarze Krypta, er meint die hätte einen hohen "wissenschaftlichen" Wert</li>
+<li>wenn wir ein Lebenszeichen von ihnen finden würde er uns gut bezahlen</li>
+<li>aber eines: bevor er uns vertraut muss er mit uns allen sprechen</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Nethalyn kommt zurück und holt Durbul und Roldar</li>
+<li>Durbul sieht, dass der Typ eher zwielichtig ist</li>
+<li>Nethalyn meint er hätte die schwarze Krypta erwähnt, wir sollten Lebenszeichen seiner Leute zurückbringen</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Grim kommt noch nicht ganz dahinter wie die Reise ins Arbitrarium funktioniert</li>
+<li>messaged Roldar was los sei: wir bleiben über Nacht, Typ aus Sagash hat Leute in Schwarze Krypta geschickt, sein 1 Woche überfällig</li>
+<li>Grim "vertraut ihr ihr schon?"</li>
+<li>Roldar meint nicht komplett, aber er glaubt keine schlechte Idee sie mitzunehmen</li>
+<li>Grim "könnte nützlich sein, ich glaube sie hat Verbindung zu Kuranesh"</li>
+<li>Roldar "darüber müssen wir später noch reden"</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Nethalyn, Durbul und Roldar gehen zu Razif</li>
+</ul>
+</p>
+
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+
+	</div>
+
+	
+
+</div>
+
+</body>
+</html>
