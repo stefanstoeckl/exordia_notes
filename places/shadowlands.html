@@ -1,0 +1,249 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>shadowlands</title>
+	<meta name='Generator' content='Zim 0.72.0'>
+	<style>
+		body, html {
+			height:100%;
+			font-family:'Open Sans', sans-serif;
+			line-height:1.5em;
+			background-color:#FAFAFA;
+			text-rendering:geometricPrecision;
+			margin:0;
+			padding:0;
+		}
+		#wrapper {
+			height:100%;
+			position:relative;
+		}
+		#navigation {
+			background-color:#F3F3F3;
+			display:inline-block;
+			border-right:1px solid #EAEAEA;
+			padding-top:10px;
+			padding-right:10px;
+			padding-left:0px;
+			position:relative;
+			float:left;
+			min-height:100%;
+			width: 300px;
+			font-size: 90%;
+			line-height:1.4em;
+		}
+		#content {
+			float:left;
+			display:inline-block;
+			position:absolute;
+			max-width:1000px;
+			padding-top:10px;
+			padding-right:25px;
+			padding-left:25px;
+			padding-bottom:25px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		a:active {
+			text-decoration: underline;
+		}
+
+		#navigation li {
+			list-style-type:circle;
+		}
+		#navigation a {
+			color: #555;
+			font-weight: 500;
+		}
+
+		#content h2,h3,h4,h5,h6 {
+			color: #4E9A06;
+			margin-bottom: 0;
+			font-weight: normal;
+		}
+		
+		#content h1 {
+		    text-decoration: underline;
+			color: #4E9A06;
+			margin-bottom: 10;
+			font-weight: normal;
+		}
+		
+		#content p {
+			margin-top: 0;
+		}
+		#content a {
+			color: #CE5C00;
+		}
+		#content strike {
+			color: grey;
+		}
+		#content u {
+			text-decoration: none;
+			background-color: yellow;
+		}
+		#content tt {
+			color: #2e3436;
+		}
+		#content pre {
+			color: #2e3436;
+			margin-left: 20px;
+		}
+
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+
+		p.footer {
+			padding-top: 45;
+			text-align: right;
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class='header'>
+	[ <a href='./sagash.html'>Prev</a> ]
+
+	[ <a href='../exordia.html'>Index</a> ]
+
+	[ <a href='../quests.html'>Next</a> ]
+</div>
+
+<hr />
+
+<div id="wrapper">
+
+<div id="navigation">
+<ul>
+<li><a href="../lore.html" title="lore" class="page">lore</a></li>
+<li><a href="../people.html" title="people" class="page">people</a></li>
+<li><a href="../places.html" title="places" class="page">places</a>
+<ul>
+<li><a href="./arkenwoods.html" title="arkenwoods" class="page">arkenwoods</a></li>
+<li><a href="./drunai.html" title="drunai" class="page">drunai</a></li>
+<li><a href="./fort_dalos.html" title="fort dalos" class="page">fort dalos</a></li>
+<li><a href="./gwydur.html" title="gwydur" class="page">gwydur</a></li>
+<li><a href="./sagash.html" title="sagash" class="page">sagash</a></li>
+<li><b>shadowlands</b></li>
+</ul>
+</li>
+<li><a href="../quests.html" title="quests" class="page">quests</a></li>
+<li><a href="../sessions.html" title="sessions" class="page">sessions</a></li>
+<li><a href="../timeline.html" title="timeline" class="page">timeline</a></li>
+</ul>
+
+</div>
+
+<!-- Wiki content -->
+
+<div id="content">
+	<div class='heading'>
+	<h1>shadowlands <a name='places:shadowlands'></a></h1>
+	</div>
+
+	<div class='content'>
+	<p>
+Created Samstag 08 August 2020
+</p>
+
+<p>
+<img src="../images/shadowlands.png">
+</p>
+
+<h2>Zusammenfassung</h2>
+
+<p>
+TODO
+</p>
+
+<br>
+<br>
+<br>
+
+<h2>Full Text</h2>
+
+<p>
+Nachdem Miriam das dunkle Rift betreten hatte, wurde sie in eine andere Plane gerissen: Die Schattenlande. Dort unterstellte sie sich den Dienst, ihrer neuen Gebieterin Syvilla Dhal Kuranesha, oder wie sie dort genannt wird: die Zwielichtkönigin, Herrin der Therokar. Die Plane ist eine Zwischenebene, zwischen der Materiellen Plane und dem Arbitrarium, dem Strudel der Zeit und dem Seelenstrom. Die verschiedenen Mächte der Schatten fließen hier zusammen: Die Akrona (Schatten der Erleuchtung), die Therokar (Schatten des Zwiespalts) und die Thanatar (Schatten des Verderbens), sind die verschiedenen Machtströme die aus den Schattenlanden ausgehen, und in den Einflussbereich anderer Ebenen züngeln. Die Verbannung der Herren der Akrona und der Thanatar, ermöglichte Syvilla die Machtübernahme der gesamten Ebene, obwohl die verschiedenen Mächte der Schatten nach wie vor in gegenseitigen Konflikt stehen, ist sie doch diejenige die als Herrin eine gewissene Balance erhalten konnte. Die Schattenlande sind jedoch trotzdem zu einer trostlosen Einöde geworden, durchzogen von schwarzen Gipfeln und Kratern, schauerlichen Stätten und Zitadellen, unter einem Himmel der ewigen Dunkelheit. Man selbst ist nur ein Schatten seiner selbst, und der Tod scheint in jedem Atemzug zu liegen. Die Augen derer, die in den Schatten verweilen sind verblasst und ihre Hoffnungen erloschen. Die Lande werden heimgesucht von furchterregenden Bestien und Gefahren jenseits aller Vorstellungskraft. Diejenigen armen, versklavten oder verirrten Seelen die hier hergefunden haben, fristen entweder ein Dasein im ewigen Kampf der Schatten, oder im Dienste ihrer dunklen Königin.
+</p>
+
+<br>
+
+<h4>Was Miriam in Gesprächen mit der Zwielichtkönigin herausfinden konnte:</h4>
+
+<p>
+Syvilla, welche die Schattendomäne ihrers Bruders Apokai auf der Thanatar verabscheut versucht dessen wachsenden Einfluss hintanzuhalten. Seine Macht wächst allerdings in großen Schritten, und es wird immer schwieriger seine ungeheuerlichen Diener zurückzudrängen. Wilde schattenhafte Bestien, Schattenunholde, Grimghales und größere, gefährlichere Unwesen, strömen immer wieder durch sogenannte Rifts, um ihren dunklen Herren auf der materiellen Ebene zu dienen. Auch die Rückkehr ihres Vaters Kuranesh auf den Thron der Akrona, wäre eine Katastrophe für Syvilla. Sie allein will über die Schattenlande herrschen, die drei Mächte der Schatten unter ihrer Kontrolle zusammenführen als dass sie am Tag der Götterdämmerung, einen Rang unter den Göttern selbst einnehmen kann, einen Rang an der Seite ihrer Patronin Noxa. Sie scheint besessen von der Prophezeiung der Morgenröte, oder der Götterdämmerung wie sie sie nennt. Die Rückkehr der Götter, die Verschmelzung der Ebenen und die Geburt einer neuen Ära. Die Macht über die gesamte Ebene, könnte ihr dabei helfen, die Elemente der Götter, die Scherben zusammenzutragen, und sie alleine hätte die Macht darüber zu entscheiden, wann der jüngste Tag kommt. Apokais Auferstehung, sowie seine Besessenheit gegenüber der Eridar Gaphne, sowie seine Suche nach den Scherben, stellt eine erhebliche Gefahr für ihre Pläne dar, genauso die Rückkehr ihres Vaters. Um ihre Macht zu festigen, ist sie wohl zu jedem Schritt bereit. Sie sagt die Morgenröte ist unvermeidlich, und es ist an der Zeit sich der richtigen Seite anzuschließen.
+</p>
+
+<h4>Welche Informationen Miriam in der Bibliothek der gefallenen Zitadelle finden konnte:</h4>
+
+<p>
+Man sagt das königliche Blut ausgehend von Kuranesh, und damit seine Blutlinie sind besonders den Kräften der Schatten zugetan. Die Geschichten besagen, dass die Götter selbst an Kuranesh herangetreten sind, und ihm die Aufgabe zugetragen haben über die Schattenlande zu herrschen, in einer ebenso erfolgreichen Art und Weise wie er über sein irdisches Reich herrschte. Man sagt, die Götter selbst hätten ihn zum Halbgott der Schatten erhoben, auf dass er Erleuchtung bringe, in das dunkle Tal der Verzweiflung. Nicht alle Götter waren von diesem Unterfangen angetan, schon gar nicht die Eridar Noxa, welche selbst nach dem Reich der Schatten trachtete. Die direkten Nachfahren von Kuranesh, erbten die Mächte der Schatten, so gelang es Apokai, vor seiner Verbannung, Kuranesh zu verraten und seine irdische Form zu ermorden. So gelang es auch Syvilla, nach dem Tod ihrer irdischen Form, die freigewordene Machtposition der Schattenlande an sich zu reißen. Nun allerdings scheint sie blind, in ihrem Glauben selbst in den Gottesrang aufzusteigen, blind zu denken sie können sich das Königreich der Schatten sichern, am Tag der Götterdämmerung.
+</p>
+
+<p>
+Die Ersten drei Geschlechter. Bereits vor der Herrschaft Kuranesh über die Schattenlande, in seinem Sitz in der Zitadelle der Erleuchtenden, gab es die ersten drei Blutlinien, welche bereits zur Zeit der Elder selbst, mit der Teilung der Schattenlande betraut wurden. Diese Familien sind auch jene, nachdenen heute die drei Ströme der Schatten bezeichnet werden, denn sie waren es die die Ströme trennen konnten, um die fragwürdigen Mächte der Schatten zu beherrschen: Die Akrona, die Therokar und die Thanatar.
+</p>
+
+<p>
+<b>Die Akrona</b> mit ihrem Stammvater Asmodor, der Strahlende, zum Rang eines Halbgottes erkoren, herrschte über die nordöstlichen Weiten der Ebene. Man sagt sie brachten das Licht in das dunkle Reich, sie brachten eine Stabilität der Dinge, denn ohne das Licht, der Schatten nicht existieren kann, und ohne Schatten kein Licht. Sie erbauten die Zitadelle der Erleuchteten. <br>
+<b>Die Therokar</b>, mit ihrem Stammvater Sintvall, der Leidende, ebenfalls zum Halbgott erkoren, herrschte über die westlichen Lande südlich der großen Weiten. Seine Familie, brachte die Leidenschaften auf die Ebene, die großen Gefühle, aber auch das Große Leid. Sie standen zwischen dem Licht und den Schatten, und man schrieb ihnen die Herrschaft über das Zwielicht zu. <br>
+<b>Die Thanatar</b>, mit ihrem Stammvater Gundrabal, der Verdorbene, ebenfalls zum Halbgott erkoren, herrschten über den Süden des Landes, und verschanzten sich in den schwarzen Spitzen um ihre dunklen Diener zu erschaffen. Sie verkörperten die dunkle Seite der Schatten, welchen nur durch das Licht Einhalt geboten werden konnte. 
+</p>
+
+<p>
+Nachdem ein Krieg die drei Ströme der Schatten an den Rande der Zerstörung trieb, und zur gleichen Zeit der Krieg der Elder die materielle Ebene zu zerstören drohte, teilten sich die Elder und die alten Blutlinien der Schatten wurden aus ihren Diensten enthoben. Sie betraten die materiellen Ebenen, und ihr weiterer Verbleib bleibt unklar.
+</p>
+
+<br>
+
+<h4>Was Miriam über ihre Vergangenheit herausfinden konnte:</h4>
+
+<p>
+Miriam schaffte es sich mehrmals in den weißen Brunnen zu schleichen, ein besonderer Ort der Zwielichtfeste. Dort konnte sie, wenn sie das silberne Wasser berührte, mehrmals Visonen ihrer Vergangenheit erlangen (Die Visonen waren meist verzerrt, und nicht hundertprozentig klar): Syvilla schaffte es mehrmals in der Vergangenheit, sich in die Machenschaften des Kultes der schwarzen Sonne einzuschleichen, um den Fortschritt des alten Rituals zu verfolgen. Sie, deren Einfluss auf die Materielle Ebene sehr schwach ist, versuchte seit jeher diejenigen irdischen Kräfte auszuforschen, die eine Verbindung zu den Schatten aufweisen. Gerade für Apokais Auferstehung war es von großer Bedeutung mächtiges Blut zu zapfen um den ewigen Prozess seiner Auferstehung zu beschleunigen, umso besser wenn es Blutlinien der Abkömmlinge der ersten Herrschaftsgeschlechtern der Schattenlande selbst sind. Kaum ein besserer Ort für Syvilla um ihre Dienerschaft zu erweitern. So kam es in jener Nacht, als das kleine Halblingskind, frisch geboren, in den Armen der sterbenden Mutter gebettet, nach dem verzweifelten Vater auf den schwarzen Altar geführt wurde. Nachdem das Blut des Vaters vergossen wurde, und die Menge sich an der Macht labte, die in seinem Blut vorhanden war, wurde auch das Kind auf den kalten Stein gelegt. Es war Syvilla, welche an den Rande ihrer Kapazitäten vordrang, um den Säugling vor seinem sicheren Ende zu bewahren. Es war Syvilla welche in genau jenem Säugling einen Nachkommen der ersten Blutlinien erkannte. So sorgte Syvilla dafür, dass das Kind in einem sicheren Umfeld aufwachsen konnte, als sie den Säugling in jener verregneten Nacht, in die Arme des ahnungslosen Alchemisten legte. Es war nur eine Frage der Zeit, bis das Kind seine Mächte entdeckt, und dann wird die Zeit kommen, wo auch Syvilla an das Kind herantreten wird, um eine alte Schuld einzufordern. Was Miriam über die Ebene, ihre Ein- und Ausgänge und Portale feststellen konnte: Die Schattenlande scheinen eine eigenartige Verbindung zu den anderen Ebenen zu haben. Immer wieder öffnen sich Rifts an sogenannten Spiegeln, oder Spiegelstellen. Spiegelstellen sind Orte an denen sich zuerst nur ein Fenster in eine andere Ebene öffnet. Die Art und Weise wie sich diese Spiegel öffnen scheint nicht zufällig. Außerdem ist eine große Macht erforderlich, um einen Spiegel zu durchbrechen, also ein begehbares Rift zu erschaffen. Diese Rifts bleiben daher oft nur Sekunden bestehen. Das große Portal im Nordwesten der hoffnungslosen Weiten, einem schrecklichen Ort, ist nicht mehr aktiv. Es diente wohl einst als offizielle Verbindung zwischen Adalantis und den Schattenlanden, ein Portal der Götter. Miriam konnte außerdem herausfinden, dass die Zeit auf dieser Plane viel scheller vergeht als draußen. Ein Jahr in den Schattenlanden, gleicht einem Tag auf Exordia. Die Bewohner der Ebene sind meist ausdruckslose Diener, jeder Art die dem Willen ihrer Königin gehorchen. Außerhalb auf den Ebenen gibt es Gruppierung die sich verschiedenen Seiten zuordnen. Manche Gruppierungen agieren um die gefallene Zitadelle, und versuchen die Rückkehr ihres rechtmäßigen Königs zu sichern, manche Gruppen agieren um die Schwarzspitze, die fanatisch die Rückkehr ihres dunklen Herren ersehnen. Obwohl die Akrona und die Thanatar momentan herrscherlos sind, ist es Syvilla immer noch nicht voll und ganz gelungen die gesamten Territorien zu kontrollieren, ihr Einfluss ist allerdings groß und ihre Machtstellung zentral. 
+</p>
+
+<h4>Miriams Zeit im Dienste der Königin und die Beherrschung der Schatten</h4>
+
+<p>
+Miriam diente als rechte Hand von Syvilla in der riesigen und schauerlichen Zwielichtfeste. Ein riesiger Komplex aus schwarzem Stein, Wällen, Türmen und Ruinen, welcher sich hoch erhebt über einer zerfallenen Stadt, die viele Tausende Diener der Schatten beherbergt. Syvilla unterrichtete Miriam in den dunklen Künsten der Schattenweberei, um eine starke Verbündete an ihrer Seite zu haben. Doch je mehr und näher sie mit Syvilla zusammenarbeitete, desto mehr wurde Miriam bewusst, welche zweifelhafte Ziele die Zwielichtskönigin verfolgte. Ihr Wahn, und ihre Besessenheit über die Morgenröte, könnte zu ihrem Untergang führen, und damit auch zum Untergang von Miriam. Die Verschmelzung der Ebenen des Arbitrariums, der Schattenlande, des Seelenstroms und der Materiellen Ebene wäre nichts weiter als der Untergang der bekannten Welt. Syvilla denkt in ihrem Wahn, sich als Göttin etablieren zu können. Alles was Miriam jemals kannte würde vernichtet, die Zeitrechnung auf Null gesetzt und die Götter würden abermals wandeln auf einer neuen Pangäa der Ebenen. Zumindest ist das, wovor die alten Bücher warnen. Die alten Bücher beschreiben, dass nur im Falle einer ausgeglichenen, geordneten Rückkehr, einer Balance der verschiedenen Mächte der Eridari, ein wirkliches „Paradies“ geschaffen werden könnte und dies wäre nur möglich wenn die alle sieben göttlichen Elemente zusammengeführt würden. Aber ist es nicht gut so, dass die Götter verbannt sind? Will man dieses Paradies überhaupt? Diese ganze Vorstellung der Götterdämmerung, oder der Morgenröte, ist das überhaupt etwas, dass man sich wünschen will für Exordia? Ist es nicht gut so, wie es ist? Ist es nicht sogar etwas, dass man mit allen Mitteln verhindern sollte, wenn man bei klarem Verstand ist? All diese Fragen, schwirrten Miriam durch den Kopf als sie ihre Zeit im Dienste Syvillas verbrachte, und Tag für Tag wurde ihr klarer vor Augen geführt, dass Syvilla wohl um keinen Deut besser ist, als ihr Bruder Apokai. Der eine handelt zwar aus boshafter Rache, während die andere nur nach Macht trachtet. Sie sind verfeindet, jedoch trotzdem beide bereit, die Morgenröte einzuleiten, und dass nur um sich selbst zum Vorteile zu verhelfen. Egal wer obsiegen mag im Machtgerangel, die Auswirkungen für die Welt wären verheerend. Vielleicht wäre die Rückkehr des strahlenden Königs Kuranesh, das einzige das wieder Stabilität in diese Ebene bringen könnte, so wie es die Eridari einst vorsahen. Doch wer weiß schon von den Plänen der Götter? Klar ist nur eines, wenn nicht gehandelt wird, dann wird das eine oder andere Ergebnis zum Untergang führen, und nur solange die Götterscherben im Verborgenen liegen, bleiben die Götter an das Arbitrarium, die Schatten an die Schattenlande, und die Toten an den großen Strom gebunden. . Sollte nur eine Scherbe in die falschen Hände geraten, könnte ihre Macht dazu missbraucht werden, um nur eine, oder wenige bestimmte Gottheiten zurück auf die materielle Ebene zu führen. Die Folge eines solchen Mißverhältnisses in der Balance der Mächte hätte eine Ära der Tyrannei, oder Schlimmeres zur Folge. Miriam erkannte bald, dass wenn sie sich weiterhin in die Dienste der Syvilla begab, sie ihre Besessenheit und womöglich den Untergang der Welt unterstützen würde. Miriam, welche sich mittlerweile nach fast einem ganzen Jahr in den Schattenlanden, zu einer fähigen Schattenweberin entwickelt hat, entschied sich gegen ihre Herrin zu stellen. Sie versuchte einen Ausweg aus ihrer Domäne zu finden, um die Welt, und vor allem ihre Freunde, vor der bevorstehenden Katastrophe zu warnen. Allerdings unterschätzte Miriam, die Fähigkeiten ihrer Herrin, und Miriams Pläne wurden erkannt. Voller Zorn und wutentbrannt über den Verrat ihrer „Schwester“, wie Syvilla sie nannte, lies sie sie in die tiefsten und schauerlichsten Höhlen, die dunklen Verliese unterhalb der Zwielichtfeste sperren, auf dass sie auf ewig dort verwelke, um am Tag der Morgenröte mitanzusehen, welch großen Fehler sie begangen hatte. 
+</p>
+
+<h4>Miriams Flucht und ein neuer Freund:</h4>
+
+<p>
+Gerade als Miriam in den dunklen Verliesen kurz vor ihrer völligen Verzweiflung stand, besuchte sie etwas in ihrer Höhle. Ein schattenhafter Wolf, von ähnlicher Gestalt wie die Schattenunholde, welche die hoffnungslosen Weiten unsicher machten, aber doch anders. Die Schatten, die sich wie dunkle Flammen von Rücken und Schweif der Bestie züngelten, mündeten in einem helleren, silbrigen Ton. Genauso seine Augen, die Miriam durch die Dunkelheit anstarrten, wie Kometen in der Nacht, furchterregend und doch sanft. Ein tiefes Knurren und eine dämonisch flüsternde Stimme schnitt sich durch die Dunkelheit, als der Schatten zu sprechen begann: „Tochter der Akronas… Es ist nicht Recht, dass ihr hier in der Dunkelheit verweilt. Ihr die ihr eigentlich Licht in die Dunkelheit bringen sollt.“ Miriam stotterte und fragte zögernd nach dem Namen der Bestie. „Ich bin [ NAME ERFINDEN], aus dem Dienste der alten Herren der Zitadelle. Ich war auf der Suche nach euch, nachdem eure Anwesenheit in den Schattenlanden vernommen wurde. Ihr seid nicht alleine.“ „Die Welt steht vor dem Abgrund Kind. Ihr könnt uns vor diesem Schicksal bewahren. Eure Freunde, ich habe sie durch die Spiegel gesehen. Sie befinden sich in großer Gefahr, denn der Prinz der schwarzen Spitzen, ist auferstanden und er schickt seine Diener um sie zu finden. Sein Griff nähert sich. Wir haben keine Zeit. Ich fûhre euch aus der Dunkelheit, wenn ihr mir vertraut.“ Miriam, welche das Angebot akzeptierte, nachdem sie erfahren hatte, dass ihre Freunde noch am Leben sind, und ihre Hilfe brauchen, streckte ihre Hand nach dem Geschöpf, und sie formten eine dunkle Wolke aus Schatten, und Licht und bahnten sich ihren Weg aus den tiefen Stollen der Zwielichtfeste. [DETAILS DER FLUCHT SELBST ÜBERLEGEN] Miriam und [NAME], welche es geschafft haben, aus der schauerlichen Festung zu entkommen, schlugen sich gemeinsam wochenlang durch die ewigen Weiten [DETAILS DER REISE ÜBERLEGEN], bis sie endlich an den Schwarzspitzen ankamen, dort wo das Böse sich versammelt hat. Sie näherten sich unbemerkt und beobachteten die Diener der schwarzen Schatten, in einer Grube am Fuße der messerartigen Gipfel, unter einem schwarz-violett leuchtenden, blitzenden Himmel. „Seht ihr, sie planen einen weiteren Angriff.“ [NAME] macht auf eine Gruppe von Schattenunholden aufmerksam, welche widerlich knurrend vor einem Spiegel warten. Miriam stockt der Atem, als sie in den Spiegel blickt und ihre Freunde erkennt, in finsteren Katakomben aus dunklem Stein. „Sie befinden sich an der letzten Ruhestätte derer vom Blute Kuranesh. Ein gefährlicher Ort, denn der Blick des Prinzen richtet sich dorthin. Seine Macht dort ist real, und allgegenwärtig, sein Fluch bindet diese Mauern. Ohne euch, werden sie versagen, und wenn sie versagen, gibt es keine Hoffnung mehr.“ Miriam und [NAME] beobachten den Spiegel, als plötzlich einer der schwarz-violett leuchenden Blitze auf den Spiegel niedergeht, und das verschwomme Bild, sich plötzlich aufreißt. [NAME] rammt seine Klauen in den schwarzen Sand, und macht sich bereit vorzupreschen. Die knurrenden, widerwärtigen Schattenunholde vor ihnen stürmen schreiend und jaulend durch den Riss, wie wildgewordene Hunde, die von der Leine gelassen wurden. [NAME] blickt zu Miriam. „JETZT“
+</p>
+
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+
+	</div>
+
+	
+
+</div>
+
+</div> <!-- /wrapper -->
+</body>
+</html>
