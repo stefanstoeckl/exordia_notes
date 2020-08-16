@@ -1,0 +1,400 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Timeline</title>
+	<meta name='Generator' content='Zim 0.72.0'>
+	<style>
+		body, html {
+			height:100%;
+			font-family:'Open Sans', sans-serif;
+			line-height:1.5em;
+			background-color:#FAFAFA;
+			text-rendering:geometricPrecision;
+			margin:0;
+			padding:0;
+		}
+		#wrapper {
+			height:100%;
+			position:relative;
+		}
+		#navigation {
+			background-color:#F3F3F3;
+			display:inline-block;
+			border-right:1px solid #EAEAEA;
+			padding-top:10px;
+			padding-right:10px;
+			padding-left:0px;
+			position:relative;
+			float:left;
+			min-height:100%;
+			width: 300px;
+			font-size: 90%;
+			line-height:1.4em;
+		}
+		#content {
+			float:left;
+			display:inline-block;
+			position:absolute;
+			max-width:1000px;
+			padding-top:10px;
+			padding-right:25px;
+			padding-left:25px;
+			padding-bottom:25px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		a:active {
+			text-decoration: underline;
+		}
+
+		#navigation li {
+			list-style-type:circle;
+		}
+		#navigation a {
+			color: #555;
+			font-weight: 500;
+		}
+
+		#content h2,h3,h4,h5,h6 {
+			color: #4E9A06;
+			margin-bottom: 0;
+			font-weight: normal;
+		}
+		
+		#content h1 {
+		    text-decoration: underline;
+			color: #4E9A06;
+			margin-bottom: 10;
+			font-weight: normal;
+		}
+		
+		#content p {
+			margin-top: 0;
+		}
+		#content a {
+			color: #CE5C00;
+		}
+		#content strike {
+			color: grey;
+		}
+		#content u {
+			text-decoration: none;
+			background-color: yellow;
+		}
+		#content tt {
+			color: #2e3436;
+		}
+		#content pre {
+			color: #2e3436;
+			margin-left: 20px;
+		}
+
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+
+		p.footer {
+			padding-top: 45;
+			text-align: right;
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class='header'>
+	[ <a href='./Sessions/Arc_02_Drunai/034_Die_Befreiung_Kuraneshs.html'>Prev</a> ]
+
+	[ <a href='./exordia.html'>Index</a> ]
+
+	[ <span class='insen'>Next</span> ]
+</div>
+
+<hr />
+
+<div id="wrapper">
+
+<div id="navigation">
+<ul>
+<li><a href="./Lore.html" title="Lore" class="page">Lore</a></li>
+<li><a href="./People.html" title="People" class="page">People</a></li>
+<li><a href="./Places.html" title="Places" class="page">Places</a></li>
+<li><a href="./Quests.html" title="Quests" class="page">Quests</a></li>
+<li><a href="./Sessions.html" title="Sessions" class="page">Sessions</a></li>
+<li><b>Timeline</b></li>
+</ul>
+
+</div>
+
+<!-- Wiki content -->
+
+<div id="content">
+	<div class='heading'>
+	<h1>Timeline <a name='Timeline'></a></h1>
+	</div>
+
+	<div class='content'>
+	<table>
+<thead><tr>
+  <th>Tag</th>
+  <th>Zeit</th>
+  <th>Session</th>
+  <th>Beschreibung</th>
+</tr></thead>
+<tr>
+  <td>1100-05-13</td>
+  <td>nachmittag</td>
+  <td>001</td>
+  <td>Treffen im Hängenden Dieb, Mord an Quinn</td>
+</tr>
+<tr>
+  <td>1100-05-14</td>
+  <td>morgen</td>
+  <td>002</td>
+  <td>Aufwachen in der Goldenen Forelle</td>
+</tr>
+<tr>
+  <td>1100-05-14</td>
+  <td>untertags</td>
+  <td>002</td>
+  <td>Erkunden von Fort Dalos und Waisenhaus</td>
+</tr>
+<tr>
+  <td>1100-05-14</td>
+  <td>abend</td>
+  <td>003</td>
+  <td>Treffen mit Arnaud Levine</td>
+</tr>
+<tr>
+  <td>1100-05-14</td>
+  <td>nacht</td>
+  <td>003</td>
+  <td>verfolgen von Stadtwache mit Gefangenen in Arkenwoods</td>
+</tr>
+<tr>
+  <td>1100-05-15</td>
+  <td>morgen</td>
+  <td>003</td>
+  <td>angekommen am Kultistenlager Wayward Mines in Arkenwoods</td>
+</tr>
+<tr>
+  <td>1100-05-15</td>
+  <td>tagsüber</td>
+  <td>003</td>
+  <td>herumschleichen + diskutieren, longrest, kultisten gefangennehmen, Abron Capman, dryads</td>
+</tr>
+<tr>
+  <td>1100-05-15</td>
+  <td>abend</td>
+  <td>005</td>
+  <td>schicken giant auf Kultistenlager, brechen in Hintereingang ein, sehen Ritual der Auferstehung Apokais</td>
+</tr>
+<tr>
+  <td>1100-05-15</td>
+  <td>abend</td>
+  <td>006</td>
+  <td>treffen Durbul, verfolgen Shakal, Kampf mit ihm</td>
+</tr>
+<tr>
+  <td>1100-05-15</td>
+  <td>abend</td>
+  <td>007</td>
+  <td>Shakal flüchtet, wir töten Velmonde, Turm fällt</td>
+</tr>
+<tr>
+  <td>1100-05-15</td>
+  <td>mitternacht</td>
+  <td>008</td>
+  <td>reden mit Babo und Fyona</td>
+</tr>
+<tr>
+  <td>1100-05-16</td>
+  <td>morgen</td>
+  <td>008</td>
+  <td>reden mehr, konflikt mit 2 halfelves (disguised als eltern zoras), treffen mit attica thorn - jetzt 10:00</td>
+</tr>
+<tr>
+  <td>1100-05-16</td>
+  <td>mittag</td>
+  <td>009</td>
+  <td>flucht von attica</td>
+</tr>
+<tr>
+  <td>1100-05-16</td>
+  <td>nachmittag</td>
+  <td>010</td>
+  <td>verstecken in arkenwoods, treffen mit Thaddäus Ygnatius; revolt in dalos, grim und miri gehen invisible hinein</td>
+</tr>
+<tr>
+  <td>1100-05-16</td>
+  <td>nachmittag</td>
+  <td>011</td>
+  <td>immer noch revolt; miri killt marine; attica nach port skye(?); party nimmt bürgermeister gefangen und will arnaud helfen</td>
+</tr>
+<tr>
+  <td>1100-05-16</td>
+  <td>nachmittag</td>
+  <td>012</td>
+  <td>party steigt mit karte von arnaud unter leuchtturm in grotte ein, killt wasserelementare, findet überflutete höhle mit schatz; nach shortrest ~ 17:00</td>
+</tr>
+<tr>
+  <td>1100-05-16</td>
+  <td>nachmittag</td>
+  <td>013</td>
+  <td>erkundung der Grotte, finden Skelette von Hodric Lynx, töten 4er Gruppe Sahuagin und bestechen/überlisten 2 große Sahuagin</td>
+</tr>
+<tr>
+  <td>1100-05-16</td>
+  <td>nachmittag</td>
+  <td>014</td>
+  <td>finden kayne henceworth, schleichen durch grotte/sewer, verwandeln sahuagin in pony</td>
+</tr>
+<tr>
+  <td>1100-05-16</td>
+  <td>abend</td>
+  <td>015</td>
+  <td>entkommen sewer, schleichen in Fort hinein, lassen Sahuagin-Pony los</td>
+</tr>
+<tr>
+  <td>1100-05-16</td>
+  <td>abend</td>
+  <td>016</td>
+  <td>Grim wird Warlock; wir nehmen Donovan gefangen; Alarm ertönt beim Tor vom Fort</td>
+</tr>
+<tr>
+  <td>1100-05-16</td>
+  <td>abend</td>
+  <td>017</td>
+  <td>Donovan gibt auf, wir öffnen Tor von Fort Dalos, Festmal, Ritterschlag, identify items, long rest</td>
+</tr>
+<tr>
+  <td>1100-05-17</td>
+  <td>früh</td>
+  <td>018</td>
+  <td>Besuch bei Zora und Durbul's Laden, Aufbruch nach Vadun</td>
+</tr>
+<tr>
+  <td>1100-05-17</td>
+  <td>tagsüber</td>
+  <td>019</td>
+  <td>Reise nach Vadun, Treffen Albatross, Pferde unterbringen, Aufbruch zu Taverne</td>
+</tr>
+<tr>
+  <td>1100-05-17</td>
+  <td>abend</td>
+  <td>020</td>
+  <td>Gericht über Freibeuter, Exekution, Angriff und Fluch der Weißrobenmönche</td>
+</tr>
+<tr>
+  <td>1100-05-17</td>
+  <td>nachts</td>
+  <td>021</td>
+  <td>Lager im Wald, Treffen mit Gash'we</td>
+</tr>
+<tr>
+  <td>1100-05-18</td>
+  <td>früh</td>
+  <td>022</td>
+  <td>Grim Treffen/Traum mit Gash'we und Satharius in der Zwischenwelt, Angriff der Schattenwölfe</td>
+</tr>
+<tr>
+  <td>1100-05-18</td>
+  <td>mittags</td>
+  <td>023</td>
+  <td>Aufbruch nach Port Ellynas, Roc vs Greifenreiter von Mathan, Explosion mit Saboteuren</td>
+</tr>
+<tr>
+  <td>1100-05-18</td>
+  <td>nachmittag</td>
+  <td>024</td>
+  <td>mit TEDDY nach Port Ellyna, Gespräch mit Fyona, Bibliothek von TEDDY, Einkaufen bei TEDDY</td>
+</tr>
+<tr>
+  <td>1100-05-19</td>
+  <td>vormittag</td>
+  <td>025</td>
+  <td>Kauf von Pferden, Fund und Kampf 1. Blutbaum, Treffen Ryana, Transport nach Gwydrasil</td>
+</tr>
+<tr>
+  <td>1100-05-19</td>
+  <td>nachmittag</td>
+  <td>026</td>
+  <td>Gespräch mit Seherin Shira; Reise zur Weiherfestung, Kampf gegen Blutent + Blutbäume</td>
+</tr>
+<tr>
+  <td>1100-05-19</td>
+  <td>nacht</td>
+  <td>027</td>
+  <td>Kampf gegen Hexen, Miri verschwindet durch Rift in die Schatten; Longrest am Weiher</td>
+</tr>
+<tr>
+  <td>1100-05-20</td>
+  <td>tag</td>
+  <td>028</td>
+  <td>Rückkehr nach Gwydrasil; Teleport Rothwald; Treffen Nethalyn; Reise nach Lauris</td>
+</tr>
+<tr>
+  <td>1100-05-21</td>
+  <td>tag</td>
+  <td>029</td>
+  <td>zu den Ruinen von Drusk, Duelle gegen die Ersten Ritter von Drunai</td>
+</tr>
+<tr>
+  <td>1100-05-21</td>
+  <td>abend</td>
+  <td>030</td>
+  <td>am Eingang der Schwarzen Krypta, Rasif drängt vor, stirbt; wir dringen ein und erkunden West- und Ostflügel</td>
+</tr>
+<tr>
+  <td>1100-05-21</td>
+  <td>abend</td>
+  <td>031</td>
+  <td>Miri kommt Schattenwölfen von Apokai nach und uns zur Hilfe; alle Schlüssel; mechanische Drachenstatue</td>
+</tr>
+<tr>
+  <td>1100-05-21</td>
+  <td>abend</td>
+  <td>032</td>
+  <td>Rätsel von Ghalvan's Sentry; Maze of Purity; Eindringen ins Inner Sanctum</td>
+</tr>
+<tr>
+  <td>1100-05-21</td>
+  <td>abend</td>
+  <td>033</td>
+  <td>Kampf gegen controlled Ghalvan, Zerstörung der Schattensäulen, Gespräch mit Apokai</td>
+</tr>
+</table>
+
+
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+
+	</div>
+
+	
+
+</div>
+
+</div> <!-- /wrapper -->
+</body>
+</html>
