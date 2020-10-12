@@ -1,0 +1,471 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>042 Neuer Verbuendete, neue Probleme</title>
+	<meta name='Generator' content='Zim 0.72.0'>
+	<style>
+		body, html {
+			height:100%;
+			font-family:'Open Sans', sans-serif;
+			line-height:1.5em;
+			background-color:#FAFAFA;
+			text-rendering:geometricPrecision;
+			margin:0;
+			padding:0;
+		}
+		#wrapper {
+			height:100%;
+			position:relative;
+		}
+		#navigation {
+			background-color:#F3F3F3;
+			display:inline-block;
+			border-right:1px solid #EAEAEA;
+			padding-top:10px;
+			padding-right:10px;
+			padding-left:0px;
+			position:relative;
+			float:left;
+			min-height:100%;
+			width: 300px;
+			font-size: 90%;
+			line-height:1.4em;
+		}
+		#content {
+			float:left;
+			display:inline-block;
+			position:absolute;
+			max-width:1000px;
+			padding-top:10px;
+			padding-right:25px;
+			padding-left:25px;
+			padding-bottom:25px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		a:active {
+			text-decoration: underline;
+		}
+
+		#navigation li {
+			list-style-type:circle;
+		}
+		#navigation a {
+			color: #555;
+			font-weight: 500;
+		}
+
+		#content h2,h3,h4,h5,h6 {
+			color: #4E9A06;
+			margin-bottom: 0;
+			font-weight: normal;
+		}
+		
+		#content h1 {
+		    text-decoration: underline;
+			color: #4E9A06;
+			margin-bottom: 10;
+			font-weight: normal;
+		}
+		
+		#content p {
+			margin-top: 0;
+		}
+		#content a {
+			color: #CE5C00;
+		}
+		#content strike {
+			color: grey;
+		}
+		#content u {
+			text-decoration: none;
+			background-color: yellow;
+		}
+		#content tt {
+			color: #2e3436;
+		}
+		#content pre {
+			color: #2e3436;
+			margin-left: 20px;
+		}
+
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+
+		p.footer {
+			padding-top: 45;
+			text-align: right;
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class='header'>
+	[ <a href='./041_Wie_gewonnen,_so_zerronnen.html'>Prev</a> ]
+
+	[ <a href='../../exordia.html'>Index</a> ]
+
+	[ <a href='../../Timeline.html'>Next</a> ]
+</div>
+
+<hr />
+
+<div id="wrapper">
+
+<div id="navigation">
+<ul>
+<li><a href="../../Lore.html" title="Lore" class="page">Lore</a></li>
+<li><a href="../../People.html" title="People" class="page">People</a></li>
+<li><a href="../../Places.html" title="Places" class="page">Places</a></li>
+<li><a href="../../Quests.html" title="Quests" class="page">Quests</a></li>
+<li><a href="../../Sessions.html" title="Sessions" class="page">Sessions</a>
+<ul>
+<li><a href="../Arc_01_Fort_Dalos.html" title="Arc 01 Fort Dalos" class="page">Arc 01 Fort Dalos</a></li>
+<li><a href="../Arc_02_Drunai.html" title="Arc 02 Drunai" class="page">Arc 02 Drunai</a></li>
+<li><a href="../Arc_03_Sagash.html" title="Arc 03 Sagash" class="page">Arc 03 Sagash</a>
+<ul>
+<li><a href="./036_Siryus_Speed.html" title="036 Siryus Speed" class="page">036 Siryus Speed</a></li>
+<li><a href="./037_Durch_das_Land_der_AnShatra.html" title="037 Durch das Land der AnShatra" class="page">037 Durch das Land der AnShatra</a></li>
+<li><a href="./038_Heisze_Spur_am_Markt_der_Faharas.html" title="038 Heisze Spur am Markt der Faharas" class="page">038 Heisze Spur am Markt der Faharas</a></li>
+<li><a href="./039_Never_split_the_party.html" title="039 Never split the party" class="page">039 Never split the party</a></li>
+<li><a href="./040_Gehirne_fuer_den_Meister,_Blut_fuer_die_Marionette.html" title="040 Gehirne fuer den Meister, Blut fuer die Marionette" class="page">040 Gehirne fuer den Meister, Blut fuer die Marionette</a></li>
+<li><a href="./041_Wie_gewonnen,_so_zerronnen.html" title="041 Wie gewonnen, so zerronnen" class="page">041 Wie gewonnen, so zerronnen</a></li>
+<li><b>042 Neuer Verbuendete, neue Probleme</b></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="../../Timeline.html" title="Timeline" class="page">Timeline</a></li>
+</ul>
+
+</div>
+
+<!-- Wiki content -->
+
+<div id="content">
+	<div class='heading'>
+	<h1>042 Neuer Verbuendete, neue Probleme <a name='Sessions:Arc 03 Sagash:042 Neuer Verbuendete, neue Probleme'></a></h1>
+	</div>
+
+	<div class='content'>
+	<p>
+Created Samstag 10 Oktober 2020
+</p>
+
+<p>
+ingame: 25. Mai 1100
+</p>
+
+<p>
+<ul>
+<li>Durbul, Miri, Grim und die Gestalt fliehen durch die Kanalisation in den Raum mit dem Ex-Mouther</li>
+<li>Grim hört Rufe "Verfolgt sie!", "Ihr zwei, geht außen rum, es gibt nur einen Weg hier raus!"</li>
+<li>Grim untersucht ein Abwasserrohr, informiert über die Rufe, vielleicht über das Rohr abhauen</li>
+<li>die Gestalt ist auf dem gleichen Weg herein wie wir, hat keinen Plan wie raus</li>
+<li>Miri untersucht den Boden der Gitterstäbe, findet ein sehr rostiges, altes Schloss</li>
+<li>Durbul haut auf Schloss, es zerfällt</li>
+<li>er versucht am Gatter zu ziehen, öffnet sich nach außen, die Gitterstäbe fangen an zu bröckeln</li>
+<li>alle klettern hinein, Durbul senkt es wieder vorsichtig, schiebt etwas Schlamm wieder zurück</li>
+<li>sie schleichen vorsichtig hinein, Durbul am Boden kriechend, Grim und Miri mit eingezogenem Kopf, die Gestalt sehr geduckt</li>
+<li>die Röhre geht lange gerade aus, es stinkt ziemlich, irgendwelche Gase; Grim sieht in 100 ft eine Leiter</li>
+<li>hinter ihnen gibt es Schritte, die im Wasser des Kanalisationstunnels plantschen</li>
+<li>es geht leise voran, Durbul tut sich sehr hart, seine Waffen schleifen etwas, aber ihm wird geholfen</li>
+<li>wir kommen zur Leiter, die Schritte hinter ihnen sind 2 Gestalten direkt bei der Biegung (Eingang Abwasserrohr), plötzlich Rufe, einer zeigt auf Durbul</li>
+<li>Grim versucht hinaufzuklettern, aber die Leiter auch ziemlich rostig, eine Sprosse bricht, Grim levitated stattdessen hinauf</li>
+<li>kommt durch eine Luke, die Kanalisation geht weiter, ein Abgrund direkt vor ihm, wo mehrere Rohre enden</li>
+<li>rechts Weg um Abgrund herum zu anderer Leiter, links ein längerer Weg zu einer Tür</li>
+<li>Grim befestigt oben ein Seil, die Gestalt fängt an zu klettern</li>
+<li>das Gitter hinten wird eingebrochen</li>
+<li>Durbul nach dem Seil hinauf, Miri bindet sich am Seil fest</li>
+<li>hinter ihnen Schritte</li>
+<li>Durbul zieht Miri nach oben, die firebolted gleichzeitig in die Abwasserröhre, trifft einen der Seeker, plötzlich scheint sich die Luft zu entzünden</li>
+<li>Miri wird von Durbul und der Druckwelle nach oben geworfen, das Seil verbrennt</li>
+<li>wildes Husten hinter uns, aber noch angeschlagene Worte hörbar</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>jetzt alle oben</li>
+<li>vom Abgrund kommt aus einem Rohr ein es ein grausiges Geräusch, sehr bekannt, ein Mouther</li>
+<li>Grim warnt vor schleimigen Stellen, dem Wesen</li>
+<li>wir entscheiden uns für den Weg zur Leiter, die führt 10 m nach oben, oben eine verschlossene Luke (schaut aus wie Kanaldeckel)</li>
+<li>wir sehen jetzt auf der anderen Seite des Abgrundes einen Mouther aus dem Rohr zu kommen</li>
+<li>Grim levitated zur Luke, findet kein Schloss oder Öffnungsmechanismus, scheint auch zu schwer zu sein für ihn</li>
+<li>Durbul sprintet die Leiter hinauf, Miri versucht mit Mage Hand zu helfen, aber Durbul haut den Deckel einfach nach außen - Tageslicht</li>
+<li>der Mouther kommt immer näher</li>
+<li>Durbul schaut hinaus, sieht dass er auf der Kreuzung vor der Villa ist, links die Kutsche, rechts Passanten, keine Wachen, hinter der Villamauer die bekannten Undercommon-Stimmen</li>
+<li>die Gestalt eilt nach, Miri klettert nach, Grim schwebt hinaus</li>
+<li>der Mouther inzwischen 20 m unter ihnen</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>die Gestalt mein "Kommt, folgt mir!" und läuft die Straße hinunter, wir folgen</li>
+<li>wir laufen um die nächsten Villen herum, Wachen ausweichend</li>
+<li>nach so 5-6 Minuten in einer Gasse bleibt die Gestalt stehen und nimmt die Kapuze ab: Attica Thron, fehlendes, vernarbtes Auge, grünes Auge, blond/braunes Haar, Makeup total verrannt, überall Lederfetzen</li>
+<li>sie hält ihre Hand vor, das Auge der Liga ist ausgebrannt, vernarbt</li>
+<li>"Egal was ihr denkt, die Sache steht anders", "Ich bin nicht euer Feind, vertraut mir, ich habe einen sicheren Ort, wir können dort alles besprechen. Ich brauche eure Hilfe."</li>
+<li>Durbul meint die Taten sprechen für sie</li>
+<li>Attica "Wichtig ist nur, dass wir ungesehen bleiben, wir müssen uns da heraus halten, was auch immer das war."</li>
+<li>Grim meint er ahnt schon was sie von uns will</li>
+<li>wir folgen Attica</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Grim messaged an Miri: "Wir müssen zusammenhalten, damit Roldar nicht umsonst gestorben ist", die nickt nur und starrt auf das Holy Symbol von Roldar</li>
+<li>dann an Durbul das gleiche, der meint "stimmt, neuer Name auf Todesliste: Nazir"</li>
+<li>Grim messaged auch dass er Attica nicht vollständig vertraut, vielleicht will sie uns in eine Falle locken will, weil er keine Ahnung hat wie sie uns gefunden hat</li>
+<li>Attica: "Falls ihr euch wundert wie ich euch gefunden habe: Zufall, guten Job gemacht zu verschwinden"; 
+<ul>
+<li>wir hätten sie ziemlich gefickt, aber so weiß sie jetzt von etwas was sie vorher nie für möglich gehalten hätte. sie hätte einen Unterschlupf und einen Verbündeten</li>
+<li>es wäre nur Zufall gewesen, habe Miri vor dem Restaurant gesehen und erkannt</li>
+<li>hat Nazir/Entführung gesehen, verfolgt</li>
+</ul>
+</li>
+<li>Grim meint sei wohl Vampir, der mächtigste Mann in Sagash - Attica meint nur der zweitmächtigste</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>wir gehen durch die Alvanesha, quer durch die Golgamesh, bei vielen Tempeln in diesem Viertel vorbei</li>
+<li>es gibt Aufständische, die Priester von Salazar vor ihren Tempeln mit Müll bewerfen</li>
+<li>kommen in ärmliche Region, verlassene Häuser</li>
+<li>steigen in eines dieser Häuser ein, vernagelte Türen, Falltür im Boden - Attica meint sei Hintereingang</li>
+<li>geht durch langen, steinernen Gang</li>
+<li>Attica schnippst Lichter an</li>
+<li>am Ende des Ganges eine kleine Wendeltreppe mit Luke</li>
+<li>kommen heraus in winziger Bibliothek, staubig, verlassen; wirkt wie backroom eines Tempels</li>
+<li>Attica öffnet die Türe, alter verlassener Tempel, Spinnweben, verbrochene Kirchenbänke, Licht scheint durch Fenster herein</li>
+<li>überall das Zeichen von Othys, der Eingang scheint verrammelt zu sein</li>
+<li>in der Mitte des Raumes steht ein großer Tisch mit Kerzen, Schriftstücke, Bücher</li>
+<li>ein alter, blinder Mann steht am Tisch, weißes Haar, um seinen Hals herum eine Eule, Symbol von Othys: "Ah, weitere Gäste. Bitte, mein Heim soll euer Heim sein"</li>
+<li>Attica meint das sei Jaskir, sei ein Priester, hat den Tempel nie verlassen; zeigt Respekt, er ist Grund warum wir ein sicheres Dach über dem Kopf haben</li>
+<li>Miri immer noch niedergeschlagen, Grim umarmt sie, sei froh dass wenigstens sie wieder da ist</li>
+<li>Attica ruft hinten hinein "Nym, sie sind hier!"</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Nym kommt von hinten, wir setzen uns alle an den großen Tisch
+<ul>
+<li>male High Elf</li>
+<li>sehr groß und schlank, grüne Augen</li>
+<li>kurze, wirre, blonde Haare</li>
+<li>blaue Samtrobe, darüber Ledermantel, darüber Brigantine aus rotem Leder mit offenem Plate-Ringkragen, Unterarmschienen und Gloves</li>
+<li>breiten Ledergürtel mit allerlei Werkzeugen und Utensilien daran hängend</li>
+<li>unter anderem hölzerne Rod mit Metallringen und Runen, sowie ein Lederkasten mit komischen Metall-"Steckern"</li>
+</ul></li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Attica meint ihr Kumpane sei oft direkt, aber ein fähiger Wissenschaftler</li>
+<li>es tut ihr leid dass wir einen Verlust hatten, sie musste eingreifen, sie kenne die Intellect Devourer</li>
+<li>Durbul meint er wäre froh darüber, hätten ihn fast bekommen</li>
+<li>Grim stellt sich vor, Nym fragt ob Attica uns vertraut - ja</li>
+<li>Miri meint sie habe ja schon im Wald gesagt dass wir auf der selben Seite sind</li>
+<li>Nym stellt sich vor, als Professor Jonik Ellabalar, Miri kennt ihn von früher - Jonik erinnert sich nach kurzer Zeit auch, war mal kurz ihr Lehrer</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Jonik meint aber jetzt drängt Locke-Hinrichtung, für den Rest sei später Zeit</li>
+<li>Grim zeigt den Oktaeder von Quinn</li>
+<li>Jonik/Attica wissen: sei praktisch nicht zu öffnen, vielleicht kennt Locke das Passwort</li>
+<li>Gruppe sagt sie hätten noch andere Spur: JJ, kennt Attica nicht</li>
+<li>Grim fragt nach größerem Bild: Jonik meint eher geheim, aber versuchen Waldera von der League wegzuhalten</li>
+<li>Gruppe meint sie wollen auch Wildera beschützen, vor Sohn eines Halbgottes; haben Kopf von Fenton Kroft</li>
+<li>Grim erzählt von Apokai, Sohn von Kuranesh</li>
+<li>Attica erinnert sich er habe die erste Scherbe gefunden, hat zur Gründung der Scarlet League geführt</li>
+<li>Attica hat Angst vor Apokai, gefährlicher Gegner, komplett andere Liga</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Jonik drängt wieder auf Locke, erzählt von eingeschmuggelter Skyritbombe im Sayyad Keep, erwähnt Kontakt, der das gemacht hat</li>
+<li>Attica meint wir müssen uns über Kontakte keine Sorgen machen, möglicherweise gibt es Casulties, aber nur Abschaum</li>
+<li>Idee ist: Ablenkung durch Explosion, Entkommen von Häftlingen - die Gruppe nicht so begeistert, vor allem wollen sie wissen wer der Kontakt war</li>
+<li>Jonik zeigt Tafel mit Grundriss des Keeps</li>
+<li>Bombe sei auf Rückseite des Keeps, durch Mitglied einer kriminellen Vereinigung eingeschleust</li>
+<li>Attica mein wir wollen Locke befreien, nicht nur weil in seiner Schuld, sondern auch weil in direkter Verbindung mit der Position der Götterscherbe</li>
+<li>Attica "egal wer Götterscherbe in die Hände bekommt, wenn es nicht wir sind ist alles verloren"</li>
+<li>Jonik erklärt Potenzierung der Elderite - keine gute Idee wenn eine Partei zwei habe - wisse noch nicht wohin mit der zweiten Scherbe</li>
+<li>Attica erzählt dass degradiert wegen ermittlerischem Misserfolg, League hat auch versucht sie zu neutralisieren, aber nicht geschafft</li>
+<li>Attica weiß nicht wieso Locke in Sagash gefangen worden ist</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>die Gruppe meint sie müsse erst mal rasten, sei noch "etwas" angeschlagen</li>
+<li>Miri fragt um ausreden unter 6 Augen - klar</li>
+<li>Grim meint Locke wäre vielleicht ein direkter Weg zur Scherbe, seien inzwischen schon einige Parteien, die sie suchen</li>
+<li>Grim meint er sei sich nicht sicher ob er der Entscheidungsfähigkeit von Jonik in einer Krise vertrauen würde - wirkt etwas weltfremd</li>
+<li>Miri meint er sei wahrscheinlich schon in Ordnung, aber halt noch nicht so lange/oft in der richtigen Welt unterwegs</li>
+<li>Miri meint sie wolle die Sache mit Roldar nicht vergessen, sehr persönliche Angelegenheit</li>
+<li>sie erzählt was sie über den Lanara/Nazir/Ultimoz - Plot weiß nachdem die anderen nix wissen</li>
+<li>Durbul meint wieso nicht einfach die Villa mit so einer Bombe von Teppich aus wegsprengen</li>
+<li>Miri hat noch mehr von Angst vor Apokai/Leage, wenn schon so ein paar Drow uns vermöbeln</li>
+<li>die 3 beraten ob es eine gute Idee sei Attica und Jonik zu helfen, kein gutes Gefühl dabei, aber sei wohl hilfreich</li>
+<li>Miri ziemlich von Nazir/Ultimoz verängstigt, der wird sie wohl verfolgen</li>
+<li>Grim meint es wäre noch zu klären was alle nach der Befreiung von Locke machen, er wolle nicht für jemanden anderen arbeiten und abhängig davon sein was die entscheiden </li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>die 3 reden mit Attica und Jonik</li>
+<li>Miri meint wir hätten vielleicht noch eine Rechnung mit Nazir offen</li>
+<li>Attica fragt ob sie nicht wissen was auf dem Spiel steht - Miri meint Roldar war auch wichtig</li>
+<li>Attica meint Roldar war unterwegs um eine Sache zu erledigen, nicht um sie aus einem Keller zu retten - soll sein Opfer umsonst sein?</li>
+<li>Jonik fragt ob nicht einfach die Stadtwache was da auch immer los sei lösen kann</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>nach einigen Gesprächen gibt es eine Vereinigung, Attica meint der Tempel hier wäre jetzt unsere Basis, gibt Ausrüstung, Gold</li>
+<li>Attica nimmt einen Ring und gibt ihn Miri: Ring of Limited Invisibility (1x pro Tag)</li>
+<li>wir beraten die Befreiung von Locke</li>
+<li>das Schafott wäre anti-magisch gesichert</li>
+<li>Miri meint vielleicht unsichtbar hin, Bombe zünden, wegteleporten</li>
+<li>Attica: nicht so einfach, die Henker haben antimagie, die Halskrause verhindert nicht nur Magie, sondern auch Magie auf das Target</li>
+<li>Jonik kennt die Halskrausen
+<ul>
+<li>sind sehr special, können nur ganz wenige Schmiede im Empire</li>
+<li>wenn sie einmal gelockt sind kaum aufzukriegen (modified arcane lock, nicht dispel-bar, Knock geht)</li>
+<li>fast unmöglich mit geschickten Fingern, bei fail leiden beide</li>
+<li>target is silenced, kann nicht mehr freiwillig auf Magie reagieren, keine Magie wirken</li>
+<li>wenn einmal mit Knock geöffnet, funktionieren sie nicht mehr ohne Reparatur</li>
+</ul>
+</li>
+<li>Attica meint noch ein gröberes Problem: Grund zur Annahme, dass die Liga jemanden schickt die Hinrichtung zu überwachen</li>
+<li>Durbul fragt wer da geschickt wird</li>
+<li>Attica denkt an Belvadrian Edensmith, anderer Inquisitor</li>
+<li>Grim fragt nach Exitstrategie</li>
+<li>Attica meint hier zurückkommen, unbekannt, habe Fluchtwege studiert</li>
+<li>Bombe sei eindeutiges Zeichen auf Empire: Attica meint nicht so ein Problem, maximal kleiner Krieg zwischen Empire und Sagash</li>
+<li>Grim fragt ob unschuldige Kriegstote nichts zählen, Attica und Jonik meinen Wahl kleineren Übels</li>
+<li>Attica erzählt: 
+<ul>
+<li>Lock wird aus Toren gebracht, auf die Plattform</li>
+<li>Ansprache</li>
+<li>Enthauptung</li>
+</ul>
+</li>
+<li>Bombe wird hoffentlich funktionieren (Jonik meint sicher, er habe sie schließlich selber gebaut), die kriminelle Vereinigung hat noch Zahlung offen und auch sonst etwas davon</li>
+<li>Miri hat eine Idee, braucht aber die Einwilligung von Locke, der sie nicht kennt</li>
+<li>Attica meint schwer einzuschätzen was Locke macht wenn er die Halskrause abbekommt, sei sehr mächtiger Magier</li>
+<li>Attica gibt Miri die Info "sagt RD0", er wird sich auskennen </li>
+<li>Jonik ziemlich entsetzt dass Attica das erwähnt hat - Party jetzt interessiert</li>
+<li>Jonik gibt ein paar Details (geht um Red Dawn, sehr blutige Geschichte, Projekt von Lastrate, funktioniert aber nur mit 2 Shards), aber meint keine Zeit für alles, sowieso viel zu gefährlich das zu wissen</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Miri geht zum Priester in die Bibliothek, der scheint zu lesen, obwohl er blind ist</li>
+<li>Miri fragt um Zeremonie für Roldar</li>
+<li>Jaskir meint gerne, aber er spürt Konflikt/Schatten in Miri, doch auch eine weiter Präsenz, jemand, der an ihr Schicksal gebunden ist</li>
+<li>Miri spürt plötzlich Solomid in sich drinnen, versucht herauszukommen; Miri lässt ihn heraus</li>
+<li>er erscheint, schaut den Blinden an "Was weißt du über die Schatten, alter Mann. Sprich nicht über Dinge, die dein menschlicher Verstand nicht greifen kann"</li>
+<li>Jaskir: "Ich verstehe euer Leid, Wanderer, auch eure Zweifel."</li>
+<li>Jaskir zu Miri: "Die Mächte, von denen ihr abzustammen glaubt, bedeuten sie wirklich Freiheit, oder verzerren sie euren Blick auf die Welt? Ihr teilt ein gemeinsamen Schicksal, es zehrt an euch, der innere Zweifel. Es gibt einen Ausweg aus der Dunkelheit, doch der Weg wird kein leichter sein. Ihr selbst könnt bestimmen, könnt euch lossagen von den fremden Mächten. Die große Eule wacht über diejenigen, die ihr den rücken kehren, denn sie ist rein, frei von Zweifel, voller Licht. Wenn ihr Licht in eurem Leben wollt: hört auf meinen Ratschlag, sonst kehrt um."</li>
+<li>Miri "Könnt ihr mir helfen?" zeigt Unterarm her</li>
+<li>er greift danach, Energie geht hinein, Miri spürt kurz Freiheit vor Zweifel/Leid/Verlust/Last auf ihrer Seele</li>
+<li>er zieht die Hand zurück: "Ihr seit sehr tief verwurzelt in den Schatten, es übersteigt meine Fähigkeiten, doch es gibt eine andere Option. Ihr könntet sie finden, die weißen Seelen der Mitternacht. Doch das zu tun wird erst eure erste Probe sein, denn sie verweilen dort, wo es ohne sie kein Licht gäbe, in den Tunneln der ewigen Dunkelheit, tief unter der Erde. Folgt dem Licht, das in euch schlummert."</li>
+<li>Miri: "Wo soll die Suche beginnen?"</li>
+<li>Jaskir: "Ich glaube ihr seit auf dem richtigen Weg. Ihr werdet Weg dorthin finden wo sie verweilen."</li>
+<li>Miri: "Wer seit ihr? Kein normaler Priester."</li>
+<li>Jaskir: "Ich bin schon sehr lange hier. Lange genug, dass ich Veränderungen gesehen habe, die mir vielleicht nicht gut vorkommen, die aber vielleicht notwendig waren. Ich hatte lange keine Gäste mehr, die Leute haben sich schon lange abgewandt von der Weisheit."</li>
+<li>Miri: "Angenommen, ich folge dem Pfad. Was passiert mit Solomid?"</li>
+<li>Jaskir: "Auch er ist ein Gefangener, auch er denkt er handelt nach seinem Willen, ist aber beeinflusst, so wie ihr. Euer Schicksal ist das selbe. Er wird für euch da sein, wenn es keinen Ausweg gibt, doch ihr könnt nicht nur euch, sondern auch ihn befreien."</li>
+<li>Miri bedankt sich </li>
+<li>Jaskir: "Nix zu danken, wenn ihr wollt könnt ihr meinen Raum verwenden, er bietet viel Wissen"</li>
+<li>Miri: "Freundlich, aber keine Zeit eine ganze Bibliothek zu lesen."</li>
+<li>Jaskir: "Vielleicht findet sich doch eine Möglichkeit, meine Türen sind immer offen."</li>
+<li>Miri: "Oder meint ihr ein spezielles Buch?" - er sagt nix</li>
+<li>ihm tut Leid was passiert ist, sie habe Roldar wohl sehr gemocht, er hofft sein Leib werde nicht für schlechte Dinge verwendet</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Jaskir geht in die Mitte des Tempels, stellt sich auf die Sonnenuhr und beginnt zu sprechen</li>
+<li>"Lange ist es her, dass ich gesprochen habe, zu einer Gruppe von verlorenen Seelen. Ihr habt eine Zuflucht gefunden, sie soll die eure sein, so lange sie euch beliebt. Doch ihr habt nicht nur gefunden, ihr habt vor allem verloren. Einen Freund."</li>
+<li>er hält das Holy Symbol in die Höhe, Licht vom Fenster durch, mitten im Raum - projiziert die Maske von Nolzor</li>
+<li>"Er war jemand der euch sehr am Herzen lag, jemand der sein Leben gelassen hat für euch."</li>
+<li>"Ich denke, ihr schuldet ihm etwas, denn er hat sein Leben nicht umsonst gelassen."</li>
+<li>"Egal wie tief der Schmerz ist, die Zeit der Hoffnung wird kommen, auch in schwere Zeiten."</li>
+<li>"Ihr seit noch hier, ihr könnt das Werk vollenden und so soll seine Seele frei sein und nicht versklavt."</li>
+<li>"Othys soll ihren Segen sprechen und die Vernunft und die Liebe schicken um die dunklen Tage zu erhellen."</li>
+<li>er nimmt das Holy Symbol wieder herunter und legt es auf den Altar</li>
+<li>"Sagt Lebwohl zu eurem Freund, doch vielleicht werdet ihr ihn eines Tages wieder sehen."</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Attica: "Es ist tragisch, aber wenn wir nicht siegreich sind, wird alles umsonst gewesen sein. Roldar ist für mehr als nur einen Freund zu befreien gestorben."</li>
+<li>Miri ist still</li>
+<li>Durbul macht ein Räucheropfer mit Pilzen aus dem Bag of Holding</li>
+<li>Durbul fragt ob der Priester gesagt hat dass sein Geist vielleicht nicht frei ist? - das beunruhigt ihn</li>
+</ul>
+</p>
+
+<p>
+Infos bis jetzt:<br>
+<ul style='padding-left: 30pt'>
+<li>manche Zellen haben Antimagic Zonen</li>
+<li>das Schafott vielleicht, aber kaum der ganze Blutplatz</li>
+</ul>
+Idee: <br>
+<ul style='padding-left: 30pt'>
+<li>Bombe zünden wenn Locke auf Blutplatz, aber noch nicht in AMF</li>
+<li>Attica macht Knock um Halskrause zu öffnen</li>
+<li>unsichtbare Miri geht zu Locke, messaged ihm er soll ihr vertrauen und sich nicht wehren und teleportet mit ihm weg</li>
+</ul>
+</p>
+
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+
+	</div>
+
+	
+
+</div>
+
+</div> <!-- /wrapper -->
+</body>
+</html>
