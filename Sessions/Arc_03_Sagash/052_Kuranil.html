@@ -1,0 +1,542 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>052 Kuranil</title>
+	<meta name='Generator' content='Zim 0.72.0'>
+	<style>
+		body, html {
+			height:100%;
+			font-family:'Open Sans', sans-serif;
+			line-height:1.5em;
+			background-color:#FAFAFA;
+			text-rendering:geometricPrecision;
+			margin:0;
+			padding:0;
+		}
+		#wrapper {
+			height:100%;
+			position:relative;
+		}
+		#navigation {
+			background-color:#F3F3F3;
+			display:inline-block;
+			border-right:1px solid #EAEAEA;
+			padding-top:10px;
+			padding-right:10px;
+			padding-left:0px;
+			position:relative;
+			float:left;
+			min-height:100%;
+			width: 300px;
+			font-size: 90%;
+			line-height:1.4em;
+		}
+		#content {
+			float:left;
+			display:inline-block;
+			position:absolute;
+			max-width:1000px;
+			padding-top:10px;
+			padding-right:25px;
+			padding-left:25px;
+			padding-bottom:25px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		a:active {
+			text-decoration: underline;
+		}
+
+		#navigation li {
+			list-style-type:circle;
+		}
+		#navigation a {
+			color: #555;
+			font-weight: 500;
+		}
+
+		#content h2,h3,h4,h5,h6 {
+			color: #4E9A06;
+			margin-bottom: 0;
+			font-weight: normal;
+		}
+		
+		#content h1 {
+		    text-decoration: underline;
+			color: #4E9A06;
+			margin-bottom: 10;
+			font-weight: normal;
+		}
+		
+		#content p {
+			margin-top: 0;
+		}
+		#content a {
+			color: #CE5C00;
+		}
+		#content strike {
+			color: grey;
+		}
+		#content u {
+			text-decoration: none;
+			background-color: yellow;
+		}
+		#content tt {
+			color: #2e3436;
+		}
+		#content pre {
+			color: #2e3436;
+			margin-left: 20px;
+		}
+
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+
+		p.footer {
+			padding-top: 45;
+			text-align: right;
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class='header'>
+	[ <a href='./051_Der_Feilscher.html'>Prev</a> ]
+
+	[ <a href='../../exordia.html'>Index</a> ]
+
+	[ <a href='./053_Salvation_by_Salavasta.html'>Next</a> ]
+</div>
+
+<hr />
+
+<div id="wrapper">
+
+<div id="navigation">
+<ul>
+<li><a href="../../Lore.html" title="Lore" class="page">Lore</a></li>
+<li><a href="../../People.html" title="People" class="page">People</a></li>
+<li><a href="../../Places.html" title="Places" class="page">Places</a></li>
+<li><a href="../../Quests.html" title="Quests" class="page">Quests</a></li>
+<li><a href="../../Sessions.html" title="Sessions" class="page">Sessions</a>
+<ul>
+<li><a href="../Arc_01_Fort_Dalos.html" title="Arc 01 Fort Dalos" class="page">Arc 01 Fort Dalos</a></li>
+<li><a href="../Arc_02_Drunai.html" title="Arc 02 Drunai" class="page">Arc 02 Drunai</a></li>
+<li><a href="../Arc_03_Sagash.html" title="Arc 03 Sagash" class="page">Arc 03 Sagash</a>
+<ul>
+<li><a href="./036_Siryus_Speed.html" title="036 Siryus Speed" class="page">036 Siryus Speed</a></li>
+<li><a href="./037_Durch_das_Land_der_AnShatra.html" title="037 Durch das Land der AnShatra" class="page">037 Durch das Land der AnShatra</a></li>
+<li><a href="./038_Heisze_Spur_am_Markt_der_Faharas.html" title="038 Heisze Spur am Markt der Faharas" class="page">038 Heisze Spur am Markt der Faharas</a></li>
+<li><a href="./039_Never_split_the_party.html" title="039 Never split the party" class="page">039 Never split the party</a></li>
+<li><a href="./040_Gehirne_fuer_den_Meister,_Blut_fuer_die_Marionette.html" title="040 Gehirne fuer den Meister, Blut fuer die Marionette" class="page">040 Gehirne fuer den Meister, Blut fuer die Marionette</a></li>
+<li><a href="./041_Wie_gewonnen,_so_zerronnen.html" title="041 Wie gewonnen, so zerronnen" class="page">041 Wie gewonnen, so zerronnen</a></li>
+<li><a href="./042_Neuer_Verbuendete,_neue_Probleme.html" title="042 Neuer Verbuendete, neue Probleme" class="page">042 Neuer Verbuendete, neue Probleme</a></li>
+<li><a href="./043_Der_Brennende_Teppich.html" title="043 Der Brennende Teppich" class="page">043 Der Brennende Teppich</a></li>
+<li><a href="./044_Unlocking_Locke.html" title="044 Unlocking Locke" class="page">044 Unlocking Locke</a></li>
+<li><a href="./045_Sharkrachnid.html" title="045 Sharkrachnid" class="page">045 Sharkrachnid</a></li>
+<li><a href="./046_The_Return_of_Henceworth.html" title="046 The Return of Henceworth" class="page">046 The Return of Henceworth</a></li>
+<li><a href="./047_The_End_of_Henceworth.html" title="047 The End of Henceworth" class="page">047 The End of Henceworth</a></li>
+<li><a href="./048_Die_Singende_Kobra.html" title="048 Die Singende Kobra" class="page">048 Die Singende Kobra</a></li>
+<li><a href="./049_TEDDY,_tollster_Tinker_transzentiert_trennende_Teilstrecken.html" title="049 TEDDY, tollster Tinker transzentiert trennende Teilstrecken" class="page">049 TEDDY, tollster Tinker transzentiert trennende Teilstrecken</a></li>
+<li><a href="./050_Der_Kraehenpriester.html" title="050 Der Kraehenpriester" class="page">050 Der Kraehenpriester</a></li>
+<li><a href="./051_Der_Feilscher.html" title="051 Der Feilscher" class="page">051 Der Feilscher</a></li>
+<li><b>052 Kuranil</b></li>
+<li><a href="./053_Salvation_by_Salavasta.html" title="053 Salvation by Salavasta" class="page">053 Salvation by Salavasta</a></li>
+</ul></li>
+</ul>
+</li>
+<li><a href="../../Timeline.html" title="Timeline" class="page">Timeline</a></li>
+</ul>
+
+</div>
+
+<!-- Wiki content -->
+
+<div id="content">
+	<div class='heading'>
+	<h1>052 Kuranil <a name='Sessions:Arc 03 Sagash:052 Kuranil'></a></h1>
+	</div>
+
+	<div class='content'>
+	<p>
+Created Donnerstag 17 Dezember 2020
+</p>
+
+<p>
+ingame: 25. Mai 1100
+</p>
+
+<p>
+<ul>
+<li>wir sind im Büro umzingelt, ca. 10 Leute, unterschiedlicher Kampfkraft, aber alle nicht ohne</li>
+<li>Sahruun steht vor uns, er beruhigt die Bodyguards
+<ul>
+<li>"Kein Grund ausschweifend zu werden, mein kleiner Freund"</li>
+<li>"Ich bin ein Mann der an das Geschäft glaubt, aus jeder Situation kann etwas gemacht werden"</li>
+<li>"Die 25k gp, die ich durch euch verloren habe, vielleicht "</li>
+<li>"Henceworth hat sich mit falschen Mitteln sein Vertrauen erkauft"</li>
+</ul>
+</li>
+<li>Grim fragt ob er weiß wer Henceworth war - interessiert ihn nicht</li>
+<li>Sahruun will irgendwas mit dem Desert Lotus, bringt angeblich 25k und noch mehr</li>
+<li>Party ist der Meinung sind nicht unsere Schulden - Feilscher schon, er droht</li>
+<li>Feilscher will im Desert Lotus Spiele manipulieren
+<ul>
+<li>Jonik meint Sicherheitsvorkehrungen sehr gut - Feilscher meint: solche? er ruft 2 Nirima-Golems herbei</li>
+<li>er meint das würde funktionieren, er kennt einen Weg, mit der richtigen Hilfe</li>
+<li>wäre sneaky zu machen, Geld verdoppeln</li>
+<li>wir sollen es uns überlegen</li>
+<li>Miri meint machen wir, wir werden uns sicher melden; er soll sich Details ausdenken</li>
+<li>Feilscher meint passt</li>
+<li>er meint er habe seine Augen und Ohren überall in der Unterstadt</li>
+<li>er meint noch wir sollen mehr Respekt haben, auch wenn er noch neuer Boss ist</li>
+<li>Miri fragt ob er Feinde hat - er sagt nix</li>
+<li>wir handeln den Kopf von Henceworth heraus, wollen den mitnehmen</li>
+</ul>
+</li>
+<li>der Feilscher lässt uns gehen</li>
+<li>wir gehen zu Silvia und nehmen das Essen to go</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>wir gehen von der Smelly Oyster weg</li>
+<li>Grim sieht Raza uns unauffällig zu folgen</li>
+<li>wir beraten was tun</li>
+<li>Grim messaged uns dass wir verfolgt werden</li>
+<li>wir beschließen alle invis zu gehen und uns beim Omen zu treffen</li>
+<li>kommen an der Bank UC Untrusted vorbei</li>
+<li>gehen in eine Seitengasse, machen uns unsichtbar; Miri macht Gestank in der Gasse </li>
+<li>wir schleichen uns wieder hinaus</li>
+<li>Durbul läuft los, Miri kann sich kaum halten</li>
+<li>Grim beobachtet während des Gehens nach hinten
+<ul>
+<li>Raza läuft im die Ecke um die wir verschwunden sind</li>
+<li>er rümpft die Nase</li>
+<li>Grim sieht ihn herumschnüffeln</li>
+<li>er kommt zum Eingang der Kluft der Schatten, schaut finster drein und dreht um</li>
+</ul></li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>wir betreten (unsichtbar) die Kluft der Schatten
+<ul>
+<li>Beleuchtung düster</li>
+<li>kaum Leute</li>
+<li>wir kommen zu Abzweigung, tief in eine Schneise in der Seite der Höhle</li>
+<li>darin sind Gebäude eingebaut, mit großem, offenen Torbogen</li>
+<li>wir sehen dahinter befestigen Pfad, der sich hinauf windet</li>
+</ul>
+</li>
+<li>treffen uns beim Torbogen
+<ul>
+<li>Jonik macht sich sichtbar</li>
+<li>wir sehen niemanden</li>
+<li>Durbul wird auch wieder sichtbar, Miri nicht</li>
+<li>Miri schleicht sich an Grim an, aber der bemerkt sie und watscht ihr eine</li>
+<li>Jonik meint besser nicht unsichtbar in Assassinengilde schleichen</li>
+</ul>
+</li>
+<li>wir gehen hinein
+<ul>
+<li>es ist kalt, unheilvoller Wind</li>
+<li>folgen dem Pfad</li>
+<li>der Pfad endet plötzlich in einer kleineren Schlucht nach unten</li>
+<li>am Ende des Pfades ist eine runde, steinerne Plattform, die über der Schlucht montiert ist</li>
+<li>jenseits der Schlucht ist eine große Zitadelle: Omen Halls</li>
+<li>dunkelbläulich schimmernde Steine</li>
+<li>in der Mitte der Plattform ist ein steinerner Sockel und ein Objekt darauf</li>
+<li>Jonik untersucht die Plattform
+<ul>
+<li>irgendwas stimmt statisch nicht, würde so nicht halten</li>
+<li>es gibt keinen Mechanismus</li>
+</ul>
+</li>
+<li>Grim nimmt Detect Magic
+<ul>
+<li>in der Nähe der Plattform ist Illusionsmagie</li>
+</ul>
+</li>
+<li>wir gehen zum Rand der Plattform
+<ul>
+<li>auf dem Sockel liegt ein Dolch</li>
+<li>Miri nimmt den Dolch mit Mage Hand - geht nicht</li>
+<li>der Boden der Plattform hat Muster</li>
+<li>Miri nimmt einen Dagger und Mage Handed ihn zum Dolch, versucht ihn zu hebeln - passiert nix</li>
+</ul>
+</li>
+<li>Grim geht zum Dolch, Durbul mit
+<ul>
+<li>goldener Dolch</li>
+<li>im Sockel eingebettet ist eine schalenförmige Versenkung</li>
+<li>flüsternde Stimmen</li>
+</ul></li>
+</ul>
+</li>
+<li>von der Zitadelle kommt eine verschleierte Gestalt über den Abgrund auf uns zu
+<ul>
+<li>humanoid</li>
+<li>Miri sagt Hallo, reagiert nicht</li>
+<li>sie sagt zischend mit vielen Stimmen "Wir sind das Omen. Ihr steht an der Pforte zum Tal des letzten Richters. "</li>
+<li>Wind stärker</li>
+<li>um Grim und Durbul kommen ~12 gleiche Gestalten</li>
+<li>Miri und Jonik gehen auch auf die Plattform</li>
+<li>"Wir sind das Omen. Ihr steht an der Pforte zum tal des letzten Richters. "</li>
+<li>die erste Gestalt deutet auf den Sockel/Dolch</li>
+<li>alle sagen "Gebt euer Blut, sprecht war, ehe ihr vor schreitet. Wir sind das Omen und unser Blick richtet sich auf euch"</li>
+<li>die Gestalten öffnen die Kutten, dunkle Lederrüstungen, violette Embleme, violetter Drache mit grüner Flamme im Sturzflug</li>
+<li>die erste Gestalt legt die Kapuze ab: Dinin</li>
+<li>"Ehe ihr fortschreitet, müsst ihr das Ritual begehen. Wir brauchen einen Tropfen Blut. Es ist Brauch, vertraut mit"</li>
+<li>Grim nimmt den Dolch: recht schlicht, aber scharf; er schneidet sich in den Daumen, Blut in Sockel</li>
+<li>Durbul bewundert Dolche, schneidet sich in die Handfläche auch Blut</li>
+<li>Jonik ritzt sich in den Unterarm, Blut</li>
+<li>Miri macht subtle False Life, pickst sich hinein, Blut</li>
+</ul>
+</li>
+<li>Dinin nimmt den Dolch, greift mit der Hand in unser Blut und castet um uns herum eine Zone of Truth</li>
+<li>die Assassinen beginnen zu chanten</li>
+<li>Dinin "Beantwortet nun diese 3 Frage. Antwortet wahr und ihr bekommt eine Audienz mit dem letzten Richter"
+<ul>
+<li>"Habt ihr getötet?" - 4x Ja</li>
+<li>"Habt ihr gemordet" - Miri Ja, Grim Ja, Durbul Ja, Jonik Nein</li>
+<li>"Habt ihr Unrecht getan" - Grim Ja, Durbul Ja, Miri Ja, Jonik Ja</li>
+</ul>
+</li>
+<li>Dinin legt den Dolch ab</li>
+<li>unser Blut ist weg</li>
+<li>Miri fragt Grim: "Warum haben dich deine Leute damals vertrieben?" - Grim ist schockiert und sagt nix</li>
+<li>Dinin macht eine Handbewegung und eine Steinbrücke zur Zitadelle erscheint: "Zögert nicht, tretet ein, Vesiphone wartet, eure Taten sind hier akzeptiert"</li>
+<li>wir gehen</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>die Gestalten hinter uns verschwinden, Dinin folgt uns</li>
+<li>das riesige Tor vor uns öffnet sich einen Spalt</li>
+<li>violettes Licht kommt heraus</li>
+<li>Dinin führt uns durch große Hallen und Säle, überall nur das violette Licht (kommt aus Fenstern)</li>
+<li>wir kommen in einen Thronsaal aus spiegelglattem, schachbrettartigem Marmor</li>
+<li>riesiger, dunkler Thron aus Stein</li>
+<li>ganz oben am Gewölbe sind schöne Fresken</li>
+<li>eine Gestalt schwebt an der Decke: Vesiphone
+<ul>
+<li>meterlange, herabhängende Kleider</li>
+<li>pechschwarze Flügel, schlagen aber nicht</li>
+<li>bleiches Gesicht</li>
+<li>goldener Kopfschmuck, Heiligenschein</li>
+<li>goldene Rüstung</li>
+<li>neben ihr schwebt eine Sichel mit gekrümmten Kopf, goldener Stahl</li>
+<li>pechschwarze, lange Haare</li>
+<li>schwarze Augen, pupillenlos</li>
+<li>nicht menschlich</li>
+</ul>
+</li>
+<li>eine Stimme hallt durch die Halle
+<ul>
+<li>"Eine Seele ist nur so viel Wert wie der Weg, den sie wählt. wählt sie falsch, vergeht sie und der ewige Strom bleibt ihr verwehrt"</li>
+<li>"Ich bin Vesiphone, letzter Richter"</li>
+</ul>
+</li>
+<li>Durbul spürt eine Präsenz der Geister, sehr konfuser Strudel der Energien; eher schlechtes Omen normal, aber so stark und klar wie nie zuvor - vergleichbar mit Priester vorher, aber anders</li>
+<li>sie gleitet herunter
+<ul>
+<li>"Ich habe schon von euch gehört. Was verschafft mir die Ehre eures Besuchs?"</li>
+</ul>
+</li>
+<li>Miri meint sie hat größere Flügel als ihr Bruder</li>
+<li>sie fragt ob wir ihren Bruder kannten - ja</li>
+<li>Dinin ist gegangen</li>
+<li>Grim: wir kennen auch seine Frau, kommen von dort</li>
+<li>sie starrt Grim an, schneidend</li>
+<li>Grim: wie ihr wisst, grausamer Mord; Beileid, tut ihm Leid dass wir es nicht verhindern konnten</li>
+<li>Ihr scheint wir standen seinem Mörder nahe</li>
+<li>Grim: wir kannten ihn, Arnaud hat ihn uns vorgestellt; aber auch gerechter Strafe zugebracht, gerade erst umgebracht</li>
+<li>Jonik holt den Kopf heraus, entschuldigt sich dass wir nur mehr Kopf haben</li>
+<li>sie fliegt einen halben Meter nach hinten: I"hr habt dieses Scheusal auf den Weg geschickt. Habt ihm Gefallen getan. Wenn ich ihn erwischt hätte, hätte er ewig gelitten"</li>
+<li>sie nimmt den Kopf, lässt ihn über ihrer Hand schweben</li>
+<li>sie studiert den Kopf und braust auf, beginnt den Kopf anzubrüllen; sehr, sehr laut</li>
+<li>sie hört auf, macht eine Bewegung und mit eine come hither Geste kommt aus den Augen des Kopfes ein gleißendes Licht und heraus steigt eine Abbildung von Henceworth, entsetzt schreiend</li>
+<li>Durbul sieht ein Chaos in der Geisterwelt: anscheinend eine Seele, die aus Kopf heraustritt</li>
+<li>die Seele schreit, aber plötzlich wächst ihr der Mund zu</li>
+<li>"Was hast du getan, du Wicht. er hielt dich für einen Freund, einen Verbündete. Möge Sathar selbst mir gewähren eure Seele verfaulen zu lassen, ..."</li>
+<li>die Seele schreit wieder</li>
+<li>sie nimmt die Sichel, die Luft über ihr knistert und über ihr geht ein Riss auf: grünlich/gräulicher Strudel, aus dem Riss greifen Seelen, verzweifelt/jammernd; Henceworth fliegt hin und wird hineingezogen</li>
+<li>Durbul sieht die Geister noch chaotischer</li>
+<li>Vesiphone ausdruckslos, als die schreiende Seele Henceworth mit Rift verschließt</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>sie ist aufgebracht, beruhigt sich aber</li>
+<li>Miri meint dieses Schicksal habe niemand verdient, wer sie sei, dass sich sich das anmaßt?</li>
+<li>sie schaut zu Durbul (Geister immer noch im Wirbel)</li>
+<li>sie gleitet zu ihm hin "Ich kann spüren, dass ihr im nahe steht"</li>
+<li>sie tippt auf seine Stirn, das Ziehen wieder da "Ihr tragt sein Zeichen. Ich spüre eine Verbindung zum Seelenlenker selbst, als hättet ihr in sein Gesicht geblickt. Ihr könnt die Verlorenen sehen?"</li>
+<li>Durbul meint sie hat Recht, hat ihn in den Shattered Isles gesehen</li>
+<li>"Habt also eine seltene Gabe, die Gabe in die Zwischenwelt zu sehen. Wisst ihr wie speziell?"</li>
+<li>Durbul meint er ließe sich von Geistern leiten</li>
+<li>sie selbst wollte einst diese Gabe, wurde aber verwehrt. wie ist euer Name, Geisterkrieger?</li>
+<li>Durbul nennt Namen, auch sie muss mit ihm in Verbindung stehen</li>
+<li>sie meint sie lässt nur seine Worte zu Taten werden</li>
+<li>sie schaut in die Runde, zu Grim</li>
+<li>zu Durbul: "An eurer Seite ist ein Abgesandter eines alten Verbündeten. Er trägt die Klinge, die einst ein Verbündnis besiegelte, benannt nach dem Herren"</li>
+<li>sie schnippt und die Sichel kommt wieder her - diese Klinge sei ihr anvertraut worden: "Kuranil"</li>
+<li>die Klingen wurden einst gemeinsam geschmiedet, Castaya, symbolisieren Pakt zwischen Aszendenten und Seelenstrudel</li>
+<li>ihr seit Gesandte dieses Paktes, auch wenn euer Weg mir noch unklar ist - in Richtung Miri und Jonik</li>
+<li>ihr seit auf dem Weg und es scheint ein steiniger zu sein</li>
+<li>sie sei nur eine Prophetin Sathars, doch kann ich euch etwas schenken</li>
+<li>sie greift auf Durbuls Brust, er spürt eigenartige Macht</li>
+<li>er erkennt die Vision des 4armigen Titanen
+<ul>
+<li>alles zieht schnell an ihm vorüber</li>
+<li>er sieht shattered isles, eigenartige Stadt</li>
+<li>Zeit/Raum biegen sich</li>
+<li>Macht erfüllt seinen Körper</li>
+</ul>
+</li>
+<li>wir sehen Durbul schweben und aufschreien, aus Durbuls Rücken schießen 4 schwarze Flügel hervor</li>
+<li>Durbul schwebt mit ihr, sinkt langsam zu Boden</li>
+<li>Durbul sieht die Flügel und sie lösen sich auf</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>sie wendet sich ab, Sichel neben ihr</li>
+<li>die Sichel steht und zittert - sie schaut hin, ungewisser Blick</li>
+<li>sie schaut zu Durbul, versucht die Waffe zu steuern, aber die scheint sich zu wehren</li>
+<li>"Das kann nicht sein. Ist das wirklich war?"</li>
+<li>die Sichel schwebt zu Durbul</li>
+<li>"Ist dies der Tag an dem die Waffe weitergeht? der Tag an dem das alte Bündnis erneuert wird?"</li>
+<li>Sichel fliegt zu Durbul, der fängt sie auf</li>
+<li>Durbul: es scheint es ist sein Wille. ist große Ehre</li>
+<li>die Flügel schießen aus Durbul heraus, seine Augen werden schwarz</li>
+<li>Vesiphone hört auf zu fliegen, berührt den Boden, "Ihr seit es, Akh'Dalor, Geisterkrieger. Was auch immer euer Weg sein darf, es ist mir eine Ehre dass ich teilnehmen darf"</li>
+<li>Durbul: ohne euch meine Bestimmung nicht erfüllt. dankbar dass ich den Pakt erneuern konnte</li>
+<li>Durbul wird wieder normal, hat aber Sichel in der Hand; trotz Größe perfekt balanciert</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Durbul spürt den Wirbel der Geister jetzt anders
+<ul>
+<li>so als ob bis jetzt alle nur Einzelerscheinungen waren</li>
+<li>jetzt kann er ganzen Strom fühlen</li>
+</ul>
+</li>
+<li>Miri fragt ob er in Ordnung ist</li>
+<li>Durbul meint Weg ist klar, sehe die Wahrheit viel klarer</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>sie steht auf "Ich spreche eure volle Unterstützung aus. Omen steht hinter jedem eurer Schritte. Nehmt dies"</li>
+<li>paar Assassinen kommen, jeder trägt einen Umhang, auf Innenseite der herabstürzende Drache</li>
+<li>jeder von uns bekommt einen: recht unscheinbar</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Durbul mein in seiner Waffe ist ein Seelenstück eines Freundes gefangen; Er wäre dankbar wenn sie helfen würde diese Seele loszulösen, damit seine Seele frei ist</li>
+<li>sie meint wäre kein Schicksal für einen Freund, aber er hätte schon die Macht sie zu befreien</li>
+<li>Durbul meint ob sie ihm helfen könnte</li>
+<li>sie will die Waffe sehen, Durbul zeigt sie her</li>
+<li>Vesiphone nimmt Durbuls Hand, zeigt auf die Axt; meint er könnte die Seele befreien, ist in seiner Macht ob sie in den Strudel eingehen darf oder verdammt wird</li>
+<li>Durbul meint er war gut, hat Strudel verdient</li>
+<li>sie meint die Waffe würde zerstört werden - Durbul meint das sei den Preis wert</li>
+<li>sie hilft Durbul eine Handbewegung machen, die Waffe beginnt zu glühend und zerbirst in 100 Stücke</li>
+<li>ein gleißendes Licht formt sich zur Seele von Roldar
+<ul>
+<li>"Viele Dank, ihr habt mich befreit. Es war grauenvoll, aber jetzt bin ich frei... Hütet euch vor Apokai"</li>
+</ul>
+</li>
+<li>Durbul: Roldar, es tut mir Leid dass es so kommen musste, dein Weg ist frei. Wenn ihr Abschied halten wollt tut es jetzt, es ist nicht lange Zeit"</li>
+<li>Miri fragt wie sie seinem Opfer gerecht werden würde, Roldar meint die Mission erfüllen, und sie solle nicht urteilen was etwas wert wäre</li>
+<li>Roldars Seele löst sich in einen glitzernden Staub auf, zieht langsam aus der Halle hinaus</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Vesiphone meint zu Durbul es sei nicht nur eine Gabe, auch eine Last; nicht immer werden Leute eure Entscheidungen verstehen</li>
+<li>Vesiphone meint sie würde Durbul Rat geben, wenn er ihn brauchen würde</li>
+<li>wenn wir sonst Hilfe brauchen, sprecht mit Dinin, hat viele Kontakte, kann uns sicher helfen</li>
+<li>sie geht jetzt beten</li>
+<li>Durbul: war bereits im Tempel Sathars, habe Priester getroffen. Er erwähnte Zwiespalt in Seele.</li>
+<li>V: "In der Tat. Vielleicht wird sich euch irgendwann eine Entscheidung aufbürden, welchen von 2 wegen ihr einschlagen wollt. wenn es soweit ist, werdet ihr wissen welche Entscheidung zu treffen ist"</li>
+<li>Durbul dankt ihr</li>
+<li>Miri fragt wegen der Weißen Seelen der Mitternacht</li>
+<li>Ihr sucht nach den weißen Seelen, den Kindern der Eule? Seid ihr ein Kind der Eule?</li>
+<li>Miri holt Amulett heraus: Nicht dass ich wüsste</li>
+<li>V greift nach dem Symbol "Ihr könnt die Seelen der Mitternacht finden, tief in den Tunneln. Es gibt mehrere Wege, von der Unterstadt aus. Vorsichtig sein, Tunnel sind groß, verstrickt und gefährlich. Seit auf der Hut, geht nicht blind dorthin. Ein gewisses Maß an Planung würde euch gut tun, wenn ihr diesen Weg bestreitet."</li>
+<li>Miri fragt welche Tunnel</li>
+<li>Vesiphone "Vielleicht sprecht ihr am besten mit Dinin"</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>sie geht beten</li>
+<li>Dinin kommt wieder herein</li>
+<li>Miri fragt Durbul: Musste er (Roldar) sehr leiden?</li>
+<li>Durbul meint kein gutes Schicksal, aber nun ist er an einem besseren Ort</li>
+<li>Miri fragt was genau passiert ist, ob er bestimmt welche Seelen eintreten dürfen</li>
+<li>Durbul meint das macht Sathar, aber wie es scheint überlässt er manchmal ihm das Urteil</li>
+<li>Miri findet es gut dass die Verantwortung bei ihm ist, sie hofft dass er es ernster nimmt als die da (V)</li>
+<li>Durbul nickt gequält</li>
+<li>Miri will sich nicht einmischen, findet nur ein Richter sollte neutral sein</li>
+<li>Durbul fragt ob sie glaube er habe keine Verdammnis verdient?</li>
+<li>Miri nicht so sicher...</li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>Dinin führt uns in einen größeren Saal mit Tischen </li>
+<li>wir bekommen Wein in goldenen Kelchen</li>
+<li>er erklärt uns die Omencloaks: 1x Tag boost auf +10 Stealth, ohne Attunement, müssen aber obenauf sein</li>
+</ul>
+</p>
+
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+
+	</div>
+
+	
+
+</div>
+
+</div> <!-- /wrapper -->
+</body>
+</html>
